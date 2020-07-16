@@ -419,7 +419,8 @@ hr {
 	  name="contact"
 	  method="POST"
 	  netlify
-    data-netlify-recaptcha="true">
+  
+    >
 	<input type="hidden" name="form-name" value="contact"/>
     
 	  <input name="hid-field" hidden />
