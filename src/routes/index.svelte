@@ -469,7 +469,7 @@ hr {
 		<!-- <span>SUBMIT</span> /> -->
 		 
 	  </div>
-	  <div  data-netlify-recaptcha="true"  class="form_elem"></div>
+	  <!-- <div  data-netlify-recaptcha="true"  class="form_elem"></div> -->
 	</form>
   </div>
 </section>
