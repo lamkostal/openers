@@ -208,17 +208,13 @@ label {
 
 .form_elem > input,
 textarea,
-select,
-/* button {
+select {
   width: 100%;
   margin: 2px 0;
   border-radius: 10px;
   transition: all 0.3s ease;
-} 
- button:hover {
-  cursor: pointer;
-  box-shadow: 1px 1px 5px 0px rgb(145, 167, 117);
-} */
+}  
+ 
 .form_elem > *:focus {
   outline: none;
   border: var(--main-color) 1px solid;
