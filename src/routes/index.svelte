@@ -422,7 +422,6 @@ hr {
 	  method="POST"
 	  netlify
 	  data-netlify-recaptcha="true">
-	  <input type="hidden" name="form-name" value="contact"/>
 	  <input name="hid-field" hidden />
 	  <div class="form_elem">
 		<input name="name" id="name" type="text" placeholder="" required />
@@ -465,7 +464,6 @@ hr {
 		<!-- <input class="form_btn" type="submit"  <img src="//icon-send.svg" width="20" alt="send"/> -->
 		<!-- <span>SUBMIT</span> /> -->
 		 
-	 
 	  </div>
 	  <div  data-netlify-recaptcha="true"  class="form_elem"></div>
 	</form>
