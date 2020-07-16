@@ -209,7 +209,7 @@ label {
 .form_elem > input,
 textarea,
 select,
-button {
+/* button {
   width: 100%;
   margin: 2px 0;
   border-radius: 10px;
@@ -218,7 +218,7 @@ button {
  button:hover {
   cursor: pointer;
   box-shadow: 1px 1px 5px 0px rgb(145, 167, 117);
-}
+} */
 .form_elem > *:focus {
   outline: none;
   border: var(--main-color) 1px solid;
@@ -232,8 +232,8 @@ button {
 }
 input,
 textarea,
-select,
-button {
+select
+{
   padding: 20px 50px 10px;
 }
 option,
@@ -259,11 +259,11 @@ select {
   background-color: transparent;
   color: var(--main-color);
 }
-.form_btn > span {
+/* .form_btn > span {
   margin: 0 10px;
   font-size: 1.2em;
   font-weight: bold;
-}
+} */
 
 span.danger {
   display: block;
@@ -324,6 +324,8 @@ hr {
   }
 }
 </style>
+
+
 
 <Modal on:close="{close}"  style={styled}/>
 <main>
@@ -421,7 +423,9 @@ hr {
 	  name="contact"
 	  method="POST"
 	  netlify
-	  data-netlify-recaptcha="true">
+    data-netlify-recaptcha="true">
+	<input type="hidden" name="form-name" value="contact"/>
+    
 	  <input name="hid-field" hidden />
 	  <div class="form_elem">
 		<input name="name" id="name" type="text" placeholder="" required />
