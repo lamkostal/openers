@@ -118,7 +118,7 @@ $: console.log(validate);
 
 <div class="form-wrap">
   <form
-  action="/success"
+  action="./success"
     netlify-honeypot="hid-field"
     class="contact-form"
     name="contact"
