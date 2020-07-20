@@ -11,9 +11,16 @@ let sources = [
 	  "https://res.cloudinary.com/lamkos/image/upload/v1592046662/animated%20backgrounds/vox_alt-lamkos3_ljyueh.gif",
 	title: "lamkos",
 	descr: "4:055s 30fps mp4",
-	downLink:
-	  "//0-02-0a-c8340a9f1f248d970a7a0e56c76def88a0c08b47c35dc5164f2948746bc68ab5_30f1d7ee.mp4",
-	  downloadFree:false
+	downLink:"",
+	downloadFree:false
+  },
+  {
+	src:
+	  "https://res.cloudinary.com/lamkos/image/upload/v1592223572/animated%20backgrounds/polyconnect_yjrjkb.gif",
+	title: "polyconnect",
+	descr: "4:06s",
+	downLink: "/mp4/polyconnect.mp4",
+	downloadFree:true
   },
   {
 	src:
@@ -25,10 +32,10 @@ let sources = [
   },
   {
 	src:
-	  "https://res.cloudinary.com/lamkos/image/upload/v1592045629/animated%20backgrounds/connect-poly_rnwmlj.gif",
+	  "https://res.cloudinary.com/lamkos/image/upload/v1595239765/animated%20backgrounds/selection-gifs/connect1sm_r3kr5p.gif",
 	title: "connect1",
 	descr: "4:06s",
-	downLink: "",
+	downLink: "/mp4/connect1.mp4",
 	downloadFree:true
   },
   {
@@ -39,20 +46,13 @@ let sources = [
 	downLink: "",
 	downloadFree:false
   },
-  {
-	src:
-	  "https://res.cloudinary.com/lamkos/image/upload/v1592223572/animated%20backgrounds/polyconnect_yjrjkb.gif",
-	title: "connect2",
-	descr: "4:06s",
-	downLink: "",
-	downloadFree:true
-  },
+  
   {
 	src:
 	  "https://res.cloudinary.com/lamkos/image/upload/v1592231375/animated%20backgrounds/psycSplash2-0d_qnz2g8.gif",
 	title: "wavy-blobs",
 	descr: "4:06s",
-	downLink: "",
+	downLink: "/mp4/wavy-blobs.mp4",
 	downloadFree:true
   },
   {
@@ -71,13 +71,13 @@ $: styled=style
 function close(){
   styled="opacity:0;"
   setTimeout(()=>styled="opacity:0;display:none;",1000)
-  console.log("fired")
+  // console.log("fired")
 }
 function open(){
   styled="opacity:0;display:flex;"
   setTimeout(()=>styled="opacity:1;display:flex;",500)
   
-  console.log("openfired")
+  // console.log("openfired")
 }
 </script>
 

@@ -6,14 +6,16 @@ let validate = true;
 let email = null;
 $: mail = email;
 
+
 function initValidation() {
   valid = function emailValidator() {
 	const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-	return re.test(String(mail).toLowerCase());
+  return re.test(String(mail).toLowerCase());
   };
-
+ 
   validate = valid();
 }
+
 
 $: console.log(mail);
 
@@ -58,7 +60,7 @@ $: console.log(validate);
   .form_elem > *:focus {
     outline: none;
     border: var(--main-color) 1px solid;
-    box-shadow: 1px 1px 5px 0px rgb(145, 167, 117) inset;
+    /* box-shadow: 1px 1px 5px 0px rgb(145, 167, 117) inset; */
     transition: all 0.2s ease-out;
   }
   .form_elem > *:focus + label {
@@ -116,6 +118,7 @@ $: console.log(validate);
 
 <div class="form-wrap">
   <form
+  action="/success"
     netlify-honeypot="hid-field"
     class="contact-form"
     name="contact"
@@ -128,8 +131,9 @@ $: console.log(validate);
       <input name="name" id="name" type="text" placeholder="" required />
       <label for="name">Name</label>
     </div>
-    <div class="form_elem">
+    <div class="form_elem" >
       <input
+      style="{ !validate? "border:1px solid red":""}"
         name="email"
         id="email"
         type="email"
@@ -138,7 +142,7 @@ $: console.log(validate);
         on:change={initValidation}
         required />
       <!-- <span>{email}</span> -->
-      <label for="email">Email</label>
+      <label for="email" style="{ !validate? "color:red":""}">Email</label>
       {#if !validate}
         <span class="danger">please insert a valid email</span>
       {:else if validate && valid}
