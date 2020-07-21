@@ -8,7 +8,7 @@
    <div class="logo-wrap"> <h1 class="temp">assetmio</h1></div>
     <ul>
         <li class="nav-item"><a href="#gallery">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon  icon--photo" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.7" stroke="rgb(0, 168, 112)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon  icon--photo" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z"/>
                 <line x1="15" y1="8" x2="15.01" y2="8" />
                 <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -21,7 +21,7 @@
 
         <li class="nav-item">
             <a href="#contact">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--contact " width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--contact " width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
                     <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
                     <line x1="12" y1="12" x2="12" y2="12.01" />
@@ -61,14 +61,20 @@
         padding: 0 2em;
       
     }
-    .nav-item{
+    .nav-item {
         margin: 0 10px;
         display:flex;
+        /* stroke:var(--inv-main-text-color); */
+
+    }
+    .nav-item:hover{
+        
     }
  
     .nav-item a:hover{
-        color:var(--inv-main-text-color);
+        color:var(--main-color);
         text-decoration: none;
+        stroke:var(--main-color);
     }
     .nav-item a{
         transition:all 0.2s ease;
@@ -76,6 +82,9 @@
         display:flex;
         align-items: center;
         color:var(--main-color); 
+        color:var(--inv-main-text-color);
+        stroke:var(--inv-main-text-color);
+
     }
     .nav-item span{
         margin-left:5px;

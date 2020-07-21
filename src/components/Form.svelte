@@ -61,7 +61,7 @@ $: console.log(validate);
     outline: none;
     border: var(--main-color) 1px solid;
     /* box-shadow: 1px 1px 5px 0px rgb(145, 167, 117) inset; */
-    transition: all 0.2s ease-out;
+    transition: all 0.3s ease-out;
   }
   .form_elem > *:focus + label {
     transform: translate(0px, -20px) scale(1.1);
@@ -91,16 +91,22 @@ $: console.log(validate);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
   }
-  .form_btn:focus {
+  .form_btn:hover {
     background-color: transparent;
     color: var(--main-color);
+    cursor:pointer;
+    border:1px solid var(--main-color);
   }
-  /* .form_btn > span {
-  margin: 0 10px;
-  font-size: 1.2em;
-  font-weight: bold;
-} */
+  .form_btn:active {
+    background-color: var(--main-color);
+    color: var(--main-text-color);
+    
+  }
+
 
   span.danger {
     display: block;
@@ -163,7 +169,7 @@ $: console.log(validate);
       <label for="select">select</label>
     </div>
     <div class="form_elem">
-      <input type="submit" value="Submit" class="form_btn" name="submit" />
+      <input type="submit" value="SUBMIT" class="form_btn" name="submit" />
       <!-- <input class="form_btn" type="submit"  <img src="//icon-send.svg" width="20" alt="send"/> -->
       <!-- <span>SUBMIT</span> /> -->
 

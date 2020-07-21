@@ -10,63 +10,99 @@ let sources = [
 	src:
 	  "https://res.cloudinary.com/lamkos/image/upload/v1592046662/animated%20backgrounds/vox_alt-lamkos3_ljyueh.gif",
 	title: "lamkos",
-	descr: "4:055s 30fps mp4",
+	descr: {
+    size:"4:055s 30fps mp4",
+    duration:"",
+    format:""
+  },
 	downLink:"",
-	downloadFree:false
+  downloadFree:false,
+  seamless:false
   },
   {
 	src:
 	  "https://res.cloudinary.com/lamkos/image/upload/v1592223572/animated%20backgrounds/polyconnect_yjrjkb.gif",
 	title: "polyconnect",
-	descr: "4:06s",
+	descr: {
+    size:"1920X1080 (1.08mb) ",
+    duration:"4s",
+    format:"25fps mp4"
+  },
 	downLink: "/mp4/polyconnect.mp4",
-	downloadFree:true
+  downloadFree:true,
+  seamless:true
   },
   {
 	src:
 	  "https://res.cloudinary.com/lamkos/image/upload/v1592046306/animated%20backgrounds/electrons_dwsdtd.gif",
 	title: "electrons",
-	descr: "4:06s",
+  descr: {
+    size:"4:055s 30fps mp4",
+    duration:"",
+    format:""
+  },
 	downLink: "",
-	downloadFree:false
+  downloadFree:false,
+  seamless:false
+  
   },
   {
 	src:
 	  "https://res.cloudinary.com/lamkos/image/upload/v1595239765/animated%20backgrounds/selection-gifs/connect1sm_r3kr5p.gif",
 	title: "connect1",
-	descr: "4:06s",
+	descr: {
+    size:"1920X1080 (1.03mb) ",
+    duration:"3s",
+    format:"25fps mp4"
+  },
 	downLink: "/mp4/connect1.mp4",
-	downloadFree:true
+  downloadFree:true,
+  seamless:true
   },
   {
 	src:
 	  "https://res.cloudinary.com/lamkos/image/upload/v1592046098/animated%20backgrounds/jeskai-apng.00099_mlrlsg.png",
 	title: "jeskai-ink",
-	descr: "4:06s",
+	descr: {
+    size:"4:055s 30fps mp4",
+    duration:"",
+    format:""
+  },
 	downLink: "",
-	downloadFree:false
+  downloadFree:false,
+  seamless:true
   },
   
   {
 	src:
 	  "https://res.cloudinary.com/lamkos/image/upload/v1592231375/animated%20backgrounds/psycSplash2-0d_qnz2g8.gif",
 	title: "wavy-blobs",
-	descr: "4:06s",
+	descr: {
+    size:"1920X1080 (0.5mb) ",
+    duration:"4s",
+    format:"25fps mp4"
+  },
 	downLink: "/mp4/wavy-blobs.mp4",
-	downloadFree:true
+  downloadFree:true,
+  seamless:true
   },
   {
 	src:
 	  "https://res.cloudinary.com/lamkos/image/upload/v1592073504/animated%20backgrounds/star-connect-apng_xr6pjy.png",
 	title: "star-connect",
-	descr: "4:06s",
+	descr: {
+    size:"1080x1920 (1mb) ",
+    duration:"4:055s",
+    format:"30fps mp4"
+  },
 	downLink: "",
-	downloadFree:true
+  downloadFree:true,
+  seamless:true
   },
 ];
 
-// let style="opacity:0;display:none;"
-let style
+let style="opacity:0;display:none;"
+// let style
 $: styled=style
 function close(){
   styled="opacity:0;"
@@ -279,7 +315,8 @@ hr {
   <div class="grid">
 	{#each sources as source}
 	<Card
-	  on:open={open}
+    on:open={open}
+    seamless={source.seamless}
 	  free={source.downloadFree}
 	  downLink={source.downLink}
 	  title={source.title}
