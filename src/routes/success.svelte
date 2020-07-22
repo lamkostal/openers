@@ -8,14 +8,19 @@
         align-items: center;
         width:100%;
         height: 100vh;
+        text-align: center;
     }
     .success-message h1{
         font-size: 6em;
         font-family: "Dancing Script";
     }
+    h2{
+        font-size: 1.5em;
+    }
 </style>
 
 <div class="success-message">
     <h1>Success!</h1>
+    <h2>Your message was delivered, we ll contact you very soon!</h2>
     <a href="/">back to homepage</a>
 </div>

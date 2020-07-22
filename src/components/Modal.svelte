@@ -124,12 +124,7 @@ export let style
     font-size:1.7em;
     font-weight: 700;
 	font-variation-settings: 'wght' 400,700;
-    transition:all 0.5s ease;
     }
-    h4:hover{
-    font-weight: 400;
-    color:var(--main-color);
-        
-    }
+  
   
 </style>

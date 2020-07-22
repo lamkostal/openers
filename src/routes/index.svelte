@@ -1,6 +1,6 @@
 <script>
 import Card from "../components/Card.svelte";
-import Nav from "../components/Nav.svelte";
+// import Nav from "../components/Nav.svelte";
 import Modal from "../components/Modal.svelte";
 import Form from "../components/Form.svelte";
 
@@ -88,14 +88,27 @@ let sources = [
   },
   {
 	src:
-	  "https://res.cloudinary.com/lamkos/image/upload/v1592073504/animated%20backgrounds/star-connect-apng_xr6pjy.png",
-	title: "star-connect",
+	  "https://res.cloudinary.com/lamkos/image/upload/v1595415839/animated%20backgrounds/selection-gifs/constel-sm_u8w95h.gif",
+	title: "Constellation",
 	descr: {
-    size:"1080x1920 (1mb) ",
-    duration:"4:055s",
-    format:"30fps mp4"
+    size:"1080x1920 (0.7mb) ",
+    duration:"4s",
+    format:"25fps mp4"
   },
-	downLink: "",
+	downLink: "/mp4/constell.mp4",
+  downloadFree:true,
+  seamless:true
+  },
+  {
+	src:
+	  "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
+	title: "Bokeh-green",
+	descr: {
+    size:"1080x1920 (0.85mb) ",
+    duration:"5s",
+    format:"25fps mp4"
+  },
+	downLink: "/mp4/bokeh-green.mp4",
   downloadFree:true,
   seamless:true
   },
@@ -118,6 +131,7 @@ function open(){
 </script>
 
 <style>
+
 :root {
   --main-color: rgb(0, 168, 112);
   --sec-color:#f4f4f4;
@@ -215,16 +229,18 @@ hr {
 
 .grid {
   margin: 2em 0;
-  padding: 0em 0 4em;
+  padding: 0em 02em 4em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 40px;
   grid-row-gap: 40px;
 }
 
 @media (max-width: 640px) {
   .grid {
 	grid-template-columns: 1fr;
+  padding: 0em 0.5em 1em;
+
   }
 }
 /* //svg styling// */
@@ -254,7 +270,6 @@ hr {
 <Modal on:close="{close}"  style={styled}/>
 <main>
 
-<Nav/>
 <section class="hero">
   <h1 class="main__color">Video animations</h1>
 

@@ -40,8 +40,7 @@
                  <span><strong>duration: </strong>{description.duration}</span>
                  <span><strong>format: </strong>{description.format}</span>
             </div>
-            {:else}<div class="description_details"> <p>You can add your own text brand name ,logo or whatever you please
-                ,don t hesitate!!</p> </div>
+            {:else}<div class="description_details"> <p>Add your own text, brand-name, logo or whatever you please, don t hesitate!!</p> </div>
 
            {/if}
     
@@ -139,12 +138,11 @@
         max-width:100%;
     }
     .title{
-        
         position:relative;
         font-weight:bold;
         /* text-transform: uppercase; */
         font-size:1.4em;
-        margin:10px 0 15px;
+        margin:5px 0 0;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -161,6 +159,7 @@
     }
     .seam svg{margin: 0 5px}
     .description{
+        padding:10px 0;
         position:relative;
         display:flex;
         flex-direction: column;
@@ -168,31 +167,36 @@
         align-items: center;
     }
     .description_details{
-        /* border:1px gray solid; */
-        padding: 0 57px;
+        padding: 0 50px;
         display:flex;
         flex-direction: column;
         font-size: 1em;
         font-weight: 100;
         text-align:left;
     }
+    @media (max-width:740){
+            .description_details{
+            padding: 0 ;
+            font-size: 1em;
+            font-weight: 100;
+        }
+    }
     .description_details span{
         margin:2px 0;
     }
     .description_details p{
         text-align:center;
-        max-width:20ch;
+        max-width:35ch;
     }
-   
     .text{
         display:flex;
         flex-direction: column;
         justify-content: space-between;
         flex-basis: 100%;
     }
-    .description>*{
+    /* .description>*{
         margin:10px;
-    }
+    } */
    
     .buttons_wrap>*{
         margin:15px;
