@@ -13,7 +13,11 @@
     <div class="card">
         {#if free}<div class="ribbon script-text">free</div>{/if}
         <div class="thumb">
-            <img src="{src}" alt="{title}" loading="lazy">
+            <!-- <img src="{src}" alt="{title}" loading="lazy"> -->
+            <video autoplay loop muted playsinline loading="lazy" style="max-width:100%">  
+               
+                <source src="{downLink}" type="video/mp4">  
+              </video>  
         </div>
         <div class="text">
          <div class="title">
@@ -59,7 +63,7 @@
                     </svg>
                 <!-- <Icon class="my-icon" icon={downIcon}></Icon>  -->
                 </a>
-                
+
             </span>
             {/if}
             <span class="card-text-block" >

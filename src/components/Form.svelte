@@ -72,6 +72,7 @@ $: console.log(validate);
   textarea,
   select {
     padding: 20px 50px 10px;
+    background-color: rgba(253, 253, 253, 0.753);
   }
   option,
   select {
