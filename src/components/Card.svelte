@@ -138,9 +138,9 @@
 
     }
 
-    .thumb img{
+    /* .thumb img{
         max-width:100%;
-    }
+    } */
     .title{
         position:relative;
         font-weight:bold;
@@ -171,7 +171,7 @@
         align-items: center;
     }
     .description_details{
-        padding: 0 50px;
+        padding: 0 ;
         display:flex;
         flex-direction: column;
         font-size: 1em;
@@ -184,6 +184,9 @@
             font-size: 1em;
             font-weight: 100;
         }
+         .description_details p{
+             margin:0;
+    }
     }
     .description_details span{
         margin:2px 0;
@@ -191,6 +194,8 @@
     .description_details p{
         text-align:center;
         max-width:35ch;
+        
+       
     }
     .text{
         display:flex;

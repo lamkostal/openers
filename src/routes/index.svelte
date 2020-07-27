@@ -35,13 +35,13 @@
         "https://res.cloudinary.com/lamkos/image/upload/v1592046306/animated%20backgrounds/electrons_dwsdtd.gif",
       title: "electrons",
       descr: {
-        size: "4:055s 30fps mp4",
+        size: "",
         duration: "",
         format: "",
       },
       downLink: "/mp4/electrons.mp4",
       downloadFree: false,
-      seamless: true,
+      seamless: false,
     },
     {
       src:
@@ -115,7 +115,7 @@
         "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
       title: "Bokeh-red",
       descr: {
-        size: "1080x1920 (0.85mb) ",
+        size: "1080x1920 (0.7mb)",
         duration: "4s",
         format: "25fps mp4",
       },
@@ -123,6 +123,59 @@
       downloadFree: true,
       seamless: true,
     },
+    {
+      src:
+        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
+      title: "PsycSplash",
+      descr: {
+        size: "1080x1920 (2.13mb)",
+        duration: "10s",
+        format: "25fps mp4",
+      },
+      downLink: "/mp4/psychSplash.mp4",
+      downloadFree: true,
+      seamless: true,
+    },
+     {
+      src:
+        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
+      title: "Oceanic",
+      descr: {
+        size: "1080x1920 (1.7mb)",
+        duration: "5s",
+        format: "25fps mp4",
+      },
+      downLink: "/mp4/oceanic.mp4",
+      downloadFree: false,
+      seamless: false,
+    },
+     {
+      src:
+        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
+      title: "Glitchy",
+      descr: {
+        size: "",
+        duration: "",
+      },
+      downLink: "/mp4/glitchy.mp4",
+      downloadFree: false,
+      seamless: true,
+    },
+     {
+      src:
+        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
+      title: "Cubic",
+      descr: {
+        size: "",
+        duration: "",
+        format: "",
+      },
+      downLink: "/mp4/cubic.mp4",
+      downloadFree: false,
+      seamless: false,
+    },
+
+
   ];
 
   let style = "opacity:0;display:none;";
@@ -233,17 +286,17 @@
   .width-60 {
     width: 60%;
   }
-  .width-30 {
+  /* .width-30 {
     width: 30%;
-  }
+  } */
 
   .grid {
     margin: 2em 0;
     padding: 0em 02em 4em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 40px;
-    grid-row-gap: 40px;
+    grid-gap: 20px;
+    /* grid-row-gap: 40px; */
   }
 
   @media (max-width: 640px) {
