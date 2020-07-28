@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "compression": "^1.7.1",
+    "css-doodle": "^0.8.5",
     "polka": "next",
     "sirv": "^0.4.0"
   },

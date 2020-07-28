@@ -24,7 +24,7 @@
             <p> {title}</p>
             {#if seamless} 
             <span class="seam">
-                <svg xmlns="http://www.w3.org/2000/svg" class="my-icon " width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="my-icon icon " width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
                     <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
                     <path d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3-3l3-3" />
@@ -112,7 +112,7 @@
         border-radius:5px;
     }
     .card a{
-        color:var(--main-color);
+        color:var(--main-dark-color);
     }
     .card-text-block{
         display:flex;
@@ -155,7 +155,7 @@
         position: absolute;
         font-size:0.6em;
         font-weight:100;
-        color:var(--main-color);
+        color:var(--main-dark-color);
         bottom:0px;
         display:flex;
         align-items: center;
@@ -215,6 +215,10 @@
         height:25px;
         margin: 0 15px 0 5px ;
         text-decoration: none;
+       
+    }
+    .icon{
+         stroke: var(--main-dark-color);
     }
     a:hover{
         text-decoration: none;

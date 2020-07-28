@@ -13,6 +13,7 @@
 	<!-- <link rel='manifest' href='manifest.json' crossorigin='use-credentials'> -->
 	<link rel='icon' type='image/png' href='favicon.png'>
 
+
 	<!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
@@ -24,7 +25,21 @@
 </head>
 <body>
 	<!-- The application will be rendered inside this element,
-	     because `src/client.js` references it -->
+		 because `src/client.js` references it -->
+		 <css-doodle id="doodle" >
+			:doodle {
+				@grid: 8 / 100%;
+				position:fixed;
+				background-color: var(--main-color); 
+			  }
+			  transition:all 2s ease;
+			  transition-delay:@r(1s);
+			  @size: 1px calc(100% + @r(10px));
+			  transform: rotate(@r(±900deg)) scaleY(@r(0.5));
+			  background: var(--main-text-color);
+			  margin: auto;
+				  
+		  </css-doodle>
 	<div id='sapper'>%sapper.html%</div>
 	<form name="contact">
 	<input type="hidden" name="form-name" value="contact"/>
@@ -35,5 +50,11 @@
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
 	%sapper.scripts%
+	<script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
+	<script>
+		let doodle=document.getElementById("doodle");
+		setInterval(()=>doodle.update(),1000)
+		
+	</script>
 </body>
 </html>

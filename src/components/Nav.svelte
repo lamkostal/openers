@@ -67,14 +67,14 @@
         /* stroke:var(--inv-main-text-color); */
 
     }
-    .nav-item:hover{
+    /* .nav-item:hover{
         
-    }
+    } */
  
     .nav-item a:hover{
-        color:var(--main-color);
+        color:var(--main-dark-color);
         text-decoration: none;
-        stroke:var(--main-color);
+        stroke:var(--main-dark-color);
     }
     .nav-item a{
         transition:all 0.2s ease;

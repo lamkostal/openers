@@ -2,7 +2,7 @@
   import Card from "../components/Card.svelte";
   import Modal from "../components/Modal.svelte";
   import Form from "../components/Form.svelte";
-
+  
   let sources = [
     {
       src:
@@ -196,11 +196,15 @@
 
 <style>
   :root {
+    /* --main-color: rgb(0, 168, 112); */
     --main-color: rgb(0, 168, 112);
+    --main-dark-color: rgb(0, 134, 90);
+
     --sec-color: #f4f4f4;
     --main-text-color: #fff;
     --inv-main-text-color: rgb(63, 63, 63);
     --sec-text-color: rgb(207, 207, 207);
+   
   }
   main {
     overflow: hidden;
@@ -209,8 +213,10 @@
     margin: 0 auto;
   }
   section {
-    margin: 0 0 50px;
+    position: relative;
+    margin:0;
     padding: 1em;
+   background:  #f4f4f4;
   }
   .section_desc {
     padding: 0 0 40px;
@@ -222,10 +228,11 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("/herobg-lines.png");
+    /* background-image: url("/herobg-lines.png"); */
     background-size: contain;
+    background: transparent;
     /* background-color: var(--main-color); */
-    /* background: url("//bg.mp4"); */
+
   }
   h1 {
     text-transform: uppercase;
@@ -276,7 +283,8 @@
     line-height: 2rem;
   }
   .gallery {
-    margin: 6em 0 4em;
+    
+    padding: 6em 0 4em;
   }
   hr {
     border: 1px solid #fff;
@@ -352,10 +360,16 @@
 
 </style>
 
+<svelte:head>
+	<title>Assetmio | Animated Visuals</title>
+</svelte:head>
+
 <Modal on:close={close} style={styled} />
 <main>
 
   <section class="hero">
+ 
+
     <h1 class="main__color">Animated Visuals</h1>
 
     <h2 class="main__color">
@@ -383,7 +397,7 @@
           width="40"
           height="60"
           rx="18"
-          fill="rgb(0, 168, 112)"
+          fill=""
           stroke="#fff"
           stroke-width="2.0px" />
         <line
