@@ -15,7 +15,6 @@
         <div class="thumb">
             <!-- <img src="{src}" alt="{title}" loading="lazy"> -->
             <video autoplay loop muted playsinline loading="lazy" style="max-width:100%">  
-               
                 <source src="{downLink}" type="video/mp4">  
               </video>  
         </div>
@@ -24,7 +23,7 @@
             <p> {title}</p>
             {#if seamless} 
             <span class="seam">
-                <svg xmlns="http://www.w3.org/2000/svg" class="my-icon icon " width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
                     <path d="M4 12v-3a3 3 0 0 1 3 -3h13m-3 -3l3 3l-3 3" />
                     <path d="M20 12v3a3 3 0 0 1 -3 3h-13m3 3l-3-3l3-3" />
@@ -55,13 +54,12 @@
             <span class="card-text-block">
                 <span>Download video file</span>
                 <a href="{downLink}" download target="_blank" rel="noopener" on:click|stopPropagation="{openModal}">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="my-icon icon icon--download" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="interact-icon icon icon--download" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
                     <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
                     <polyline points="7 11 12 16 17 11" />
                     <line x1="12" y1="4" x2="12" y2="16" />
                     </svg>
-                <!-- <Icon class="my-icon" icon={downIcon}></Icon>  -->
                 </a>
 
             </span>
@@ -69,14 +67,14 @@
             <span class="card-text-block" >
                 <span>Contact for customisation </span>
                 <a href="#contact">
-                <svg xmlns="http://www.w3.org/2000/svg" class="my-icon icon icon--contact" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="interact-icon icon icon--contact" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
                     <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
                     <line x1="12" y1="12" x2="12" y2="12.01" />
                     <line x1="8" y1="12" x2="8" y2="12.01" />
                     <line x1="16" y1="12" x2="16" y2="12.01" />
                   </svg>
-                <!-- <Icon class="my-icon"  icon={speachIcon} scale="3"></Icon> -->
+                <!-- <Icon class="interact-icon"  icon={speachIcon} scale="3"></Icon> -->
             </a> 
             </span>
          
@@ -210,15 +208,22 @@
     .buttons_wrap>*{
         margin:15px;
     }
-    a :global(.my-icon){
+    a :global(.interact-icon){
         width:25px;
         height:25px;
         margin: 0 15px 0 5px ;
         text-decoration: none;
+         transition: all 0.2s;
        
     }
     .icon{
          stroke: var(--main-dark-color);
+    }
+    .interact-icon:hover{
+       
+
+        stroke:var(--main-color) ;
+        stroke-width: 2.5px;
     }
     a:hover{
         text-decoration: none;
