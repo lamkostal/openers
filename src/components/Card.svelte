@@ -1,5 +1,5 @@
 <script>
-    export let title,description,src,downLink,free,seamless
+    export let title,description,downLink,free,seamless
    
     
     import {createEventDispatcher} from 'svelte';
@@ -13,7 +13,7 @@
     <div class="card">
         {#if free}<div class="ribbon script-text">free</div>{/if}
         <div class="thumb">
-            <!-- <img src="{src}" alt="{title}" loading="lazy"> -->
+          
             <video autoplay loop muted playsinline loading="lazy" style="max-width:100%">  
                 <source src="{downLink}" type="video/mp4">  
               </video>  

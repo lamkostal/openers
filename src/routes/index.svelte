@@ -2,182 +2,8 @@
   import Card from "../components/Card.svelte";
   import Modal from "../components/Modal.svelte";
   import Form from "../components/Form.svelte";
+  import {sources} from "../sources.js"
   
-  let sources = [
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1592046662/animated%20backgrounds/vox_alt-lamkos3_ljyueh.gif",
-      title: "lamkos",
-      descr: {
-        size: "",
-        duration: "",
-        format: "",
-      },
-      downLink: "/mp4/lamkos.mp4",
-      downloadFree: false,
-      seamless: false,
-    },
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1592223572/animated%20backgrounds/polyconnect_yjrjkb.gif",
-      title: "polyconnect",
-      descr: {
-        size: "1920X1080 (1.08mb) ",
-        duration: "4s",
-        format: "25fps mp4",
-      },
-      downLink: "/mp4/polyconnect.mp4",
-      downloadFree: true,
-      seamless: true,
-    },
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1592046306/animated%20backgrounds/electrons_dwsdtd.gif",
-      title: "electrons",
-      descr: {
-        size: "",
-        duration: "",
-        format: "",
-      },
-      downLink: "/mp4/electrons.mp4",
-      downloadFree: false,
-      seamless: false,
-    },
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1595239765/animated%20backgrounds/selection-gifs/connect1sm_r3kr5p.gif",
-      title: "connect1",
-      descr: {
-        size: "1920X1080 (1.03mb) ",
-        duration: "3s",
-        format: "25fps mp4",
-      },
-      downLink: "/mp4/connect1.mp4",
-      downloadFree: true,
-      seamless: true,
-    },
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1592046098/animated%20backgrounds/jeskai-apng.00099_mlrlsg.png",
-      title: "jeskai-ink",
-      descr: {
-        size: "4:055s 30fps mp4",
-        duration: "",
-        format: "",
-        
-      },
-      downLink: "/mp4/jeskai768.mp4",
-      downloadFree: false,
-      seamless: false,
-    },
-
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1592231375/animated%20backgrounds/psycSplash2-0d_qnz2g8.gif",
-      title: "wavy-blobs",
-      descr: {
-        size: "1920X1080 (0.35mb) ",
-        duration: "4s",
-        format: "25fps mp4",
-      },
-      downLink: "/mp4/wavy-blobs.mp4",
-      downloadFree: true,
-      seamless: true,
-    },
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1595415839/animated%20backgrounds/selection-gifs/constel-sm_u8w95h.gif",
-      title: "Constellation",
-      descr: {
-        size: "1080x1920 (0.7mb) ",
-        duration: "4s",
-        format: "25fps mp4",
-      },
-      downLink: "/mp4/constell.mp4",
-      downloadFree: true,
-      seamless: true,
-    },
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
-      title: "Bokeh-green",
-      descr: {
-        size: "1080x1920 (0.85mb) ",
-        duration: "5s",
-        format: "25fps mp4",
-      },
-      downLink: "/mp4/bokeh-green.mp4",
-      downloadFree: true,
-      seamless: true,
-    },
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
-      title: "Bokeh-red",
-      descr: {
-        size: "1080x1920 (0.7mb)",
-        duration: "4s",
-        format: "25fps mp4",
-      },
-      downLink: "/mp4/bokeh-red.mp4",
-      downloadFree: true,
-      seamless: true,
-    },
-    {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
-      title: "PsycSplash",
-      descr: {
-        size: "1080x1920 (2.13mb)",
-        duration: "10s",
-        format: "25fps mp4",
-      },
-      downLink: "/mp4/psychSplash.mp4",
-      downloadFree: true,
-      seamless: true,
-    },
-     {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
-      title: "Oceanic",
-      descr: {
-        size: "1080x1920 (1.7mb)",
-        duration: "5s",
-        format: "25fps mp4",
-      },
-      downLink: "/mp4/oceanic.mp4",
-      downloadFree: false,
-      seamless: false,
-    },
-     {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
-      title: "Glitchy",
-      descr: {
-        size: "",
-        duration: "",
-      },
-      downLink: "/mp4/glitchy.mp4",
-      downloadFree: false,
-      seamless: true,
-    },
-     {
-      src:
-        "https://res.cloudinary.com/lamkos/image/upload/v1595418257/animated%20backgrounds/selection-gifs/bokeh-green-sm_d8cic3.gif",
-      title: "Cubic",
-      descr: {
-        size: "",
-        duration: "",
-        format: "",
-      },
-      downLink: "/mp4/cubic.mp4",
-      downloadFree: false,
-      seamless: false,
-    },
-
-
-  ];
-
   let style = "opacity:0;display:none;";
   // let style
   $: styled = style;
@@ -434,7 +260,6 @@
           free={source.downloadFree}
           downLink={source.downLink}
           title={source.title}
-          src={source.src}
           description={source.descr} />
       {/each}
     </div>
@@ -446,10 +271,10 @@
   <!-- CONTACT FORM -->
 
   <section id="contact">
-    <img src="/paper-plane140x140.png" alt="" class="decorativ plane">
-    <img src="/sbottled-letter140x140.png" alt="" class="decorativ bottle">
-    <img src="/fast-email@140x140.png" alt="" class="decorativ mails">
-    <img src="/customer-service140x140.png" alt="" class="decorativ service">
+    <img src="/paper-plane140x140.png" alt="paper plane" class="decorativ plane">
+    <img src="/sbottled-letter140x140.png" alt="bottled message" class="decorativ bottle">
+    <img src="/fast-email@140x140.png" alt="letters flying" class="decorativ mails">
+    <img src="/customer-service140x140.png" alt="customer service" class="decorativ service">
     <img src="/contact.png" alt="contact" />
     <div class="section_desc">
       <h2 class="ivert__color">Contact us</h2>
