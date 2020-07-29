@@ -219,7 +219,7 @@
    background:  #f4f4f4;
   }
   .section_desc {
-    padding: 0 0 40px;
+    padding: 0 15px 40px;
   }
   .hero {
     position: relative;

@@ -28,15 +28,21 @@
 		 because `src/client.js` references it -->
 		 <css-doodle id="doodle" >
 			:doodle {
-				@grid: 8 / 100%;
+				@grid: 6 / 100%;
 				position:fixed;
 				background-color: var(--main-color); 
 			  }
-			  transition:all 2s ease;
-			  transition-delay:@r(1s);
-			  @size: 1px calc(100% + @r(10px));
-			  transform: rotate(@r(±900deg)) scaleY(@r(0.5));
-			  background: var(--main-text-color);
+			  border-radius: @pick(100% 0, 0 100%);
+			  transition:all @p(5s,6s,7s8s,9s,10s) linear;
+			  
+			  @size: 80% calc(80% + @r(10px));
+			 
+			 
+			 
+
+			  transform: rotate(@r(±90deg)) translate(@p(50px,-50px)) ;
+			  background: var(--main-dark-color);
+			  opacity:0.4;
 			  margin: auto;
 				  
 		  </css-doodle>
@@ -53,7 +59,7 @@
 	<script src="https://unpkg.com/css-doodle@0.8.5/css-doodle.min.js"></script>
 	<script>
 		let doodle=document.getElementById("doodle");
-		setInterval(()=>doodle.update(),1000)
+		setInterval(()=>doodle.update(),10000)
 		
 	</script>
 </body>
