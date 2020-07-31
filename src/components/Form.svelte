@@ -24,6 +24,7 @@ $: console.log(validate);
 
 <style>
   .form-wrap {
+    padding: 0 0 50px;
     display: flex;
     justify-content: center;
   }

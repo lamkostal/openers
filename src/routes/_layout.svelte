@@ -1,5 +1,9 @@
 <script>
-import Nav from "../components/Nav.svelte"
+import Nav from "../components/Nav.svelte";
+import Footer from "../components/Footer.svelte";
+
+
+
 </script>
 
 <style>
@@ -12,3 +16,4 @@ import Nav from "../components/Nav.svelte"
 <div>
 	<slot></slot>
 </div>
+<Footer/>

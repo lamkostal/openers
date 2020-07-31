@@ -2,7 +2,9 @@
   import Card from "../components/Card.svelte";
   import Modal from "../components/Modal.svelte";
   import Form from "../components/Form.svelte";
-  import {sources} from "../sources.js"
+  import {sources} from "../sources.js";
+  import CatNav from "../components/CatNav.svelte";
+  import { fade } from 'svelte/transition';
   
   let style = "opacity:0;display:none;";
   // let style
@@ -17,6 +19,12 @@
     setTimeout(() => (styled = "opacity:1;display:flex;"), 500);
 
     // console.log("openfired")
+  }
+  let filter="all";
+  $:filtered=filter;
+  function setFilter(event){
+    filtered=event.detail.category;
+    console.log(filtered)
   }
 </script>
 
@@ -167,7 +175,7 @@
   }
   .plane{
     width:60px;
-    bottom:35px;
+    bottom:84px;
     right:38%;
   }
   .service{
@@ -252,15 +260,21 @@
       </h3>
     </div>
 
+    <CatNav on:setCategory="{setFilter}"/>
+
     <div class="grid">
       {#each sources as source}
-        <Card
+        {#if source.category==filtered || filtered==="all"}<Card
+         
           on:open={open}
           seamless={source.seamless}
           free={source.downloadFree}
           downLink={source.downLink}
           title={source.title}
-          description={source.descr} />
+          description={source.descr}
+          videoPreview={source.videoPreview}
+         
+           />{/if}
       {/each}
     </div>
     <hr class="width-60" />
