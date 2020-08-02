@@ -14,28 +14,34 @@ const dispatch = createEventDispatcher();
 <div class="categories-menu">
     <ul class="categories-menu_list">
         <li>
-          <button transition:fade value="all" 
+          <button transition:fade|local value="all" 
           	class:active="{current === 'all'}"
 	        on:click="{() => current = 'all'}"
             on:click={setCat}
          >All</button></li>
         <li>
-        <button transition:fade value="abstract" 
+        <button transition:fade|local value="abstract" 
         	class:active="{current === 'abstract'}"
 	        on:click="{() => current = 'abstract'}"
         on:click={setCat}>Abstract</button>
         </li>
         <li>
-        <button transition:fade value="text" 
+        <button transition:fade|local value="text" 
         	class:active="{current === 'text'}"
 	        on:click="{() => current = 'text'}"
         on:click={setCat}>Text</button>
         </li>
         <li>
-        <button transition:fade value="counters" 
+        <button transition:fade|local value="counters" 
         	class:active="{current === 'counters'}"
 	        on:click="{() => current = 'counters'}"
         on:click={setCat}>Counters</button>
+        </li>
+         <li>
+        <button transition:fade|local value="stream" 
+        	class:active="{current === 'stream'}"
+	        on:click="{() => current = 'stream'}"
+        on:click={setCat}>Stream</button>
         </li>
     </ul>    
    
@@ -63,20 +69,29 @@ const dispatch = createEventDispatcher();
         justify-content: center;
     }
     button{
-        width:100%;
+        width:95%;
         cursor: pointer;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        border-radius: 5px;
+        border-color: var(--main-color);
     }
     button:hover{
-         box-shadow:  0 0px 08px inset rgb(153, 153, 153)   
+         box-shadow:  0 0px 18px inset rgb(255, 255, 255)   
     }
     button:active{
         outline: none;
         border: none;
     }
+   
      .active{
        background: var(--main-color);
        color: var(--main-text-color);
        border:none;
+ }
+ .active:hover{
+     box-shadow:none;
+     cursor: auto;
  }
  
 </style>

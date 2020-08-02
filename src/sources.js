@@ -198,6 +198,73 @@ export let sources = [{
     downloadFree: false,
     seamless: false,
   },
+  {
+    title: "Countdown2",
+    category:"counters",
+    descr: {
+      size: "1080x1920 (0.7mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/countdown.mp4",
+    videoPreview:"/mp4/countdown2-s.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+  {
+    title: "Stream",
+    category:"stream",
+    descr: {
+      size: "1080x1920 (0.6mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamStarts.mp4",
+    videoPreview:"/mp4/streamStarts-s.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+        title: "Stream2",
+    category:"stream",
+    descr: {
+      size: "1080x1920 (4.5mb)",
+      duration: "7s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamStarts2.mp4",
+    videoPreview:"/mp4/streamStarts2-s.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "Blobsun",
+    category:"abstract",
+    descr: {
+      size: "1080x1920 (0.5mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/blobsun.mp4",
+    videoPreview:"/mp4/blobsun-s.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "Collide",
+    category:"text",
+    descr: {
+      size: "1080x1920 (2.7mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/collide.mp4",
+    videoPreview:"/mp4/collide-s.mp4",
+    downloadFree: false,
+    seamless: false,
+  },
 
 
 ];
+
+console.log(sources.length)

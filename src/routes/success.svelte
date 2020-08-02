@@ -1,6 +1,8 @@
 <style>
     .success-message{
+        position: relative;
         background-color: var(--inv-main-text-color);
+        opacity: 0.9;
         color:var(--main-color);
         display:flex;
         flex-direction: column;
@@ -9,6 +11,7 @@
         width:100%;
         height: 100vh;
         text-align: center;
+        z-index: 10;
     }
     .success-message h1{
         font-size: 6em;

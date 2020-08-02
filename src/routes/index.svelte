@@ -213,7 +213,7 @@
     </h2>
 
     <h3 class="main__color">
-      download free video openers with seamless pattern loops for your youtube,
+      download free video openers in full-HD with seamless pattern loops for your youtube,
       twich or other content creator platform!
     </h3>
     <figure>

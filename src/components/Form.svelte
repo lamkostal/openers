@@ -65,7 +65,7 @@ $: console.log(validate);
     transition: all 0.3s ease-out;
   }
   .form_elem > *:focus + label {
-    transform: translate(0px, -20px) scale(1.1);
+    transform: translate(0px, -14px) scale(1.1);
     color: var(--main-color);
     font-weight: bold;
   }

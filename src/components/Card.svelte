@@ -1,6 +1,6 @@
 <script>
     export let title,description,downLink,free,seamless,videoPreview
-    import { fade, fly } from 'svelte/transition';
+    import { fade, fly ,slide} from 'svelte/transition';
     
     import {createEventDispatcher} from 'svelte';
     const dispatch = createEventDispatcher();
@@ -10,7 +10,7 @@
     }
     </script>
     
-    <div class="card" transition:fade="{{ mode:"out-in",duration: 500 }}">
+    <div class="card" in:fly="{{ y: 200, duration: 1000 }}" out:fade="{{ duration: 200 }}">
         {#if free}<div class="ribbon script-text">free</div>{/if}
         <div class="thumb">
             <video autoplay loop muted playsinline loading="lazy" style="max-width:100%">  

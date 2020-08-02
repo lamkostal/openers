@@ -48,6 +48,8 @@
     background: var(--sec-color)
     }
     .logo-wrap{
+        display: flex;
+        align-items: center;
         margin-left: 2em;
         text-transform: uppercase;
     }
