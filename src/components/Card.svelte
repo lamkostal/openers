@@ -12,7 +12,10 @@
      console.log("dispatched from component")
     }
     onMount(async () => {
-		const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+		const observer = lozad('.lozad', {
+    rootMargin: '100px 0px', // syntax similar to that of CSS Margin
+    threshold: 0.1 // ratio of element convergence
+}); // lazy loads elements with default selector as '.lozad'
     observer.observe();
 	});
     
