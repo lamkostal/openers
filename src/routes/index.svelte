@@ -133,6 +133,7 @@
   } */
 
   .grid {
+    position: relative;
     margin: 2em 0;
     padding: 0em 02em 4em;
     display: grid;
@@ -143,10 +144,43 @@
 
   @media (max-width: 640px) {
     .grid {
+      
       grid-template-columns: 1fr;
       padding: 0em 0.5em 1em;
     }
   }
+  .totop{
+    display: grid;
+    font-size: 1.5em;
+    place-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 90px;
+    right: 40px;
+    background: var(--main-dark-color);
+    color: var(--main-text-color);
+    border-radius: 50%;
+}
+
+.totop:hover{
+  box-shadow: 0 0 10px gray;
+}
+@media (max-width:740px){
+  .totop{
+    display: grid;
+    font-size: 1.5em;
+    place-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 10px;
+    background: var(--main-dark-color);
+    color: var(--main-text-color);
+    border-radius: 50%;
+}
+}
   /* //svg styling// */
   .line-mouse1 {
     animation: line-mouse1-scroll 2s infinite;
@@ -195,13 +229,13 @@
 </style>
 
 <svelte:head>
-	<title>Assetmio | Animated Visuals</title>
+	<title>Openers | Animated Visuals</title>
 </svelte:head>
 
 <Modal on:close={close} style={styled} />
 <main>
 
-  <section class="hero">
+  <section class="hero" id="hero">
  
 
     <h1 class="main__color">Animated Visuals</h1>
@@ -276,7 +310,9 @@
          
            />{/if}
       {/each}
+    
     </div>
+       <a class="totop" href="#gallery"><span>&#x2B06</span></a>
     <hr class="width-60" />
   
 

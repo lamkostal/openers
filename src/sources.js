@@ -251,15 +251,15 @@ export let sources = [{
     seamless: true,
   },
   {
-    title: "Collide",
+    title: "Interact",
     category:"text",
     descr: {
       size: "1080x1920 (2.7mb)",
       duration: "4s",
       format: "25fps mp4",
     },
-    downLink: "/mp4/collide.mp4",
-    videoPreview:"/mp4/collide-s.mp4",
+    downLink: "/mp4/interact.mp4",
+    videoPreview:"/mp4/interact-s.mp4",
     downloadFree: false,
     seamless: false,
   },

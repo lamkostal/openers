@@ -63,7 +63,7 @@
             {#if free}
             <span class="card-text-block">
                 <span>Download video file</span>
-                <a href="{downLink}" download target="_blank" rel="noopener" on:click|stopPropagation="{openModal}">
+                <a title="download {title}" href="{downLink}" download target="_blank" rel="noopener" on:click|stopPropagation="{openModal}">
                     <svg xmlns="http://www.w3.org/2000/svg" class="interact-icon icon icon--download" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
                     <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
@@ -76,7 +76,7 @@
             {/if}
             <span class="card-text-block" >
                 <span>Contact for customisation </span>
-                <a href="#contact">
+                <a href="#contact" title="contact">
                 <svg xmlns="http://www.w3.org/2000/svg" class="interact-icon icon icon--contact" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#00a870" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z"/>
                     <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />

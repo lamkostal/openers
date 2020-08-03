@@ -51,8 +51,15 @@ const dispatch = createEventDispatcher();
 
     .categories-menu{
         margin: auto;
+        width:60vw;
+        padding: 0 15px;
+       
+    }
+    @media (max-width:740px){
+        .categories-menu{
+       
         width:80vw;
-        padding: 15px
+        }
        
     }
     .categories-menu_list{
@@ -60,6 +67,7 @@ const dispatch = createEventDispatcher();
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
         list-style: none;
         padding: 0;
     }
