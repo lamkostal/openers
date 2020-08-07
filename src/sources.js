@@ -263,6 +263,20 @@ export let sources = [{
     downloadFree: false,
     seamless: false,
   },
+  {
+    title: "Stream3",
+    category:"stream",
+    descr: {
+      size: "1080x1920 (3.8mb)",
+      duration: "6s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamStarts3.mp4",
+    videoPreview:"/mp4/streamStarts3-s.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+
 
 
 ];

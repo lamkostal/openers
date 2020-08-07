@@ -229,7 +229,7 @@
 </style>
 
 <svelte:head>
-	<title>Openers | Animated Visuals</title>
+	<title>openR | Animated Visuals</title>
 </svelte:head>
 
 <Modal on:close={close} style={styled} />

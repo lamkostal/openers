@@ -5,7 +5,7 @@
 </script>
 
 <nav class="navbar">
-   <div class="logo-wrap"> <h1 class="temp">Openr</h1></div>
+   <div class="logo-wrap"> <h1 class="temp">openR</h1></div>
     <ul>
         <li class="nav-item"><a href="#gallery" title="gallery">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon  icon--photo" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -51,7 +51,7 @@
         display: flex;
         align-items: center;
         margin-left: 2em;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
     }
     .logo-wrap h1{
         font-weight: normal;
