@@ -30,30 +30,33 @@
 <body>
 	<!-- The application will be rendered inside this element,
 		 because `src/client.js` references it -->
-		 <css-doodle id="doodle" >
-			:doodle {
-				@grid: 6 / 100%;
-				position:fixed;
-				background-color: var(--main-color); 
+		 
+	<div id='sapper'>
+		%sapper.html%
+	</div>
+	<css-doodle id="doodle" >
+		:doodle {
+			@grid: 6 / 100%;
+			position:fixed;
+			background-color: var(--main-color); 
 
-			  }
-				transition:all 0.5s ease-out;
-				transition-delay:@p([0-10])s;
+		  }
+			transition:all 0.5s ease-out;
+			transition-delay:@p([0-10])s;
 
-			  border-radius: @pick(100% 0, 0 100%);
-			 
+		  border-radius: @pick(100% 0, 0 100%);
+		 
+		  
+		  @size: 80% calc(80% + @r(10px));
+		  
+
+		  transform: rotate(@r(±90deg)) translate(@p(10vh,5vh,-5vh,-10vh)) ;
+		  background: rgb(0, @p(144,155,245,205), 90);
+		  opacity:0.4;
+		  margin: auto;
+		 
 			  
-			  @size: 80% calc(80% + @r(10px));
-			  
-
-			  transform: rotate(@r(±90deg)) translate(@p(10vh,5vh,-5vh,-10vh)) ;
-			  background: rgb(0, @p(144,155,245,205), 90);
-			  opacity:0.4;
-			  margin: auto;
-			 
-				  
-		  </css-doodle>
-	<div id='sapper'>%sapper.html%</div>
+	  </css-doodle>
 	<form name="contact">
 	<input type="hidden" name="form-name" value="contact"/>
 
