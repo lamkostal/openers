@@ -229,7 +229,24 @@
 </style>
 
 <svelte:head>
-	<title>openR | Animated Visuals</title>
+	<!-- Primary Meta Tags -->
+<title>openR  - animated visuals, free video openers resources</title>
+<meta name="title" content="openR  - animated visuals, free video openers resources">
+<meta name="description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="openR  - animated visuals, free video openers resources">
+<meta property="og:description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="openR  - animated visuals, free video openers resources">
+<meta property="twitter:description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
+<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 </svelte:head>
 
 <Modal on:close={close} style={styled} />
