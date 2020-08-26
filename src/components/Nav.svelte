@@ -5,7 +5,7 @@
 </script>
 
 <nav class="navbar">
-   <div class="logo-wrap"> <h1 class="temp">openR</h1></div>
+   <div class="logo-wrap"> <img class="logo" src="/openr_logo.svg" alt="openr logo"></div>
     <ul>
         <li class="nav-item"><a href="#gallery" title="gallery">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon  icon--photo" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -34,7 +34,8 @@
     </ul>
 </nav>
 <style>
-    .temp{
+    .logo{
+        width:120px;
         margin:0.5em 0;
     }
     .navbar{
@@ -53,9 +54,7 @@
         margin-left: 2em;
         /* text-transform: uppercase; */
     }
-    .logo-wrap h1{
-        font-weight: normal;
-    }
+   
     ul{
         list-style: none;
         display:flex;
@@ -98,10 +97,7 @@
         margin-left: 1em;
         text-transform: uppercase;
     }
-    .logo-wrap h1{
-        font-weight: normal;
-        font-size: 1em;
-    }
+   
     ul{
         list-style: none;
         display:flex;

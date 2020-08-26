@@ -37,7 +37,7 @@
     --sec-color: #f4f4f4;
     --main-text-color: #fff;
     --inv-main-text-color: rgb(63, 63, 63);
-    --sec-text-color: rgb(207, 207, 207);
+    --sec-text-color: rgb(236, 236, 236);
    
   }
   main {
@@ -232,7 +232,7 @@
 	<!-- Primary Meta Tags -->
 <title>openR  - animated visuals, free video openers resources</title>
 <meta name="title" content="openR  - animated visuals, free video openers resources">
-<meta name="description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
+<meta name="description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twitch or other content creator platform!">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">

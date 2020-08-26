@@ -56,7 +56,7 @@
                  <span><strong>duration: </strong>{description.duration}</span>
                  <span><strong>format: </strong>{description.format}</span>
             </div>
-            {:else}<div class="description_details"> <p>Add your own text, brand-name, logo or whatever you please, don t hesitate!!</p> </div>
+            {:else}<div class="description_details"> <p>Add your own text, img, brand, logo or whatever you can think of, contact us don't hesitate!</p> </div>
 
            {/if}
     
