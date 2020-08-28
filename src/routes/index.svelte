@@ -150,6 +150,7 @@
     }
   }
   .totop{
+    transition: all 0.2s;
     display: grid;
     font-size: 1.5em;
     place-items: center;
@@ -160,11 +161,15 @@
     right: 40px;
     background: var(--main-dark-color);
     color: var(--main-text-color);
+    
+
+   box-shadow: 0 0 10px rgba(163, 163, 163,0);
+
     border-radius: 50%;
 }
 
 .totop:hover{
-  box-shadow: 0 0 10px gray;
+   box-shadow: 0 0 10px rgba(163, 163, 163,1);
 }
 @media (max-width:740px){
   .totop{
@@ -178,6 +183,7 @@
     right: 10px;
     background: var(--main-dark-color);
     color: var(--main-text-color);
+    
     border-radius: 50%;
 }
 }
@@ -329,7 +335,9 @@
       {/each}
     
     </div>
-       <a class="totop" href="#gallery"><span>&#x2B06</span></a>
+       <a class="totop" title="go to top!" href="#gallery"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd" />
+      </svg></a>
     <hr class="width-60" />
   
 
