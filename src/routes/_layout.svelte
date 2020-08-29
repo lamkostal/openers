@@ -7,13 +7,21 @@ import Footer from "../components/Footer.svelte";
 </script>
 
 <style>
+.layout{
+	display:flex;
+	flex-direction:column;
+	justify-content: space-between;
+}
 
 </style>
 
 
+
+<div class="layout">
 <Nav/>
 
-<div>
-	<slot></slot>
+	<slot>
+
+	</slot>
+	<Footer/>
 </div>
-<Footer/>

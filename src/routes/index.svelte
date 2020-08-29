@@ -44,7 +44,7 @@
     overflow: hidden;
     text-align: center;
     padding: 0em 0;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   section {
     position: relative;

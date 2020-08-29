@@ -122,6 +122,14 @@ $: console.log(validate);
     text-align: right;
     color: green;
   }
+  #consent-label{
+    display:inline;
+    position:relative;
+    transform:translate(0);
+    top:0;
+    left: 5px;
+
+  }
 </style>
 
 <div class="form-wrap">
@@ -169,6 +177,11 @@ $: console.log(validate);
         {/each}
       </select>
       <label for="select">select</label>
+    </div>
+    <div class="">
+      <input type="checkbox" id="consent" name="consent_check" required/>
+      <label id="consent-label" for="consent">I consent in the storage and use of personal data (name, email) as described in the <a href="/privacy" style="color:var(--main-color)">privacy policy</a>.</label>
+
     </div>
     <div class="form_elem">
       <input type="submit" value="SUBMIT" class="form_btn" name="submit" />
