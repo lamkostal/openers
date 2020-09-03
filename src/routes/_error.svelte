@@ -1,7 +1,10 @@
 <script>
 	
 	
+  export let status;
+  export let error;
 
+  const dev = process.env.NODE_ENV === 'development';
 	
 </script>
 
@@ -20,7 +23,7 @@
         text-align: center;
         z-index: 10;
     }
-    .error-message h1{
+     h1{
         font-size: 6em;
         font-family: "Dancing Script";
     }
@@ -32,9 +35,18 @@
 <svelte:head>
 	<title>error 404</title>
 </svelte:head>
+{#if status === 404}
+<h1>404 not found</h1>
+  
+{:else}
+  <h1>Error: {error.message}</h1>
+  <p>status: {status}</p>
+  {#if dev && error.stack}
+    <pre>{error.stack}</pre>
+  {/if}
+{/if}
 
 <div class="error-message">
-    <h1>404, not found</h1>
     <h2>hmm, something went wrong here</h2>
     <a href="/">back to homepage</a>
 </div>
