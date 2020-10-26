@@ -130,7 +130,10 @@ export let sources = [{
       format: "25fps mp4",
     },
     downLink: "/mp4/psychSplash.mp4",
-    videoPreview:"/mp4/psychSplash-s.mp4",
+
+    // videoPreview:"/mp4/psychSplash-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603718323/animated%20backgrounds/openR-thumbs/psychSplash-s_qspklj.mp4",
+
     downloadFree: true,
     seamless: true,
   },
