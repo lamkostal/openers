@@ -8,8 +8,7 @@ export let sources = [{
     },
     downLink: "/mp4/lamkos.mp4",
     // videoPreview:"/mp4/lamkos-s.mp4",
-    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722436/animated%20backgrounds/openR-thumbs/lamkos-s_r910g1.mp4-s.mp4",
-
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722436/animated%20backgrounds/openR-thumbs/lamkos-s_r910g1.mp4",
     downloadFree: false,
     seamless: false,
   },
