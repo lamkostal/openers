@@ -55,24 +55,20 @@ export let sources = [{
     downLink: "/mp4/connect1.mp4",
     // videoPreview:"/mp4/connect1-s.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722443/animated%20backgrounds/openR-thumbs/connect1-s_jbxgq2.mp4",
-
     downloadFree: true,
     seamless: true,
   },
   {
-
     title: "jeskai-ink",
     category:"text",
     descr: {
       size: "4:055s 30fps mp4",
       duration: "",
       format: "",
-
     },
     downLink: "/mp4/jeskai768.mp4",
     // videoPreview:"/mp4/jeskai-s.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722437/animated%20backgrounds/openR-thumbs/jeskai-s_qyf2xv.mp4",
-
     downloadFree: false,
     seamless: false,
   },
