@@ -303,6 +303,20 @@ export let sources = [{
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "Simple Count",
+    category:"counters",
+    descr: {
+      size: "1080x1920 (0.2mb)",
+      duration: "5s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/simpleCount.mp4",
+    // videoPreview:"/mp4/streamStarts3-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1605615648/animated%20backgrounds/openR-thumbs/simpleCount-s_bokrs3.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 ];
 
