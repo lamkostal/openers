@@ -313,6 +313,20 @@ export let sources = [{
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "Stream-shaky",
+    category:"stream",
+    descr: {
+      size: "1080x1920 (7mb)",
+      duration: "7s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamStarts4-shakey.mp4",
+    // videoPreview:"/mp4/streamStarts-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1605799584/animated%20backgrounds/openR-thumbs/streamStarts4-shakey-s_xhcnym.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 ];
 
