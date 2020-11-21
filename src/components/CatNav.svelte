@@ -85,7 +85,7 @@ const dispatch = createEventDispatcher();
         border-color: var(--main-color);
     }
     button:hover{
-         box-shadow:  0 0px 18px inset rgb(255, 255, 255)   
+         box-shadow:  0 0px  3px 1px  rgb(255, 201, 54)   
     }
     button:active{
         outline: none;

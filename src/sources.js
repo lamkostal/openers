@@ -327,6 +327,34 @@ export let sources = [{
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "Stream-play",
+    category:"stream",
+    descr: {
+      size: "1080x1920 (0.85mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamStarts5-play.mp4",
+    // videoPreview:"/mp4/streamStarts-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1605968339/animated%20backgrounds/openR-thumbs/streamStarts5_play-s_lkh1mp.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "Clock-hip",
+    category:"counters",
+    descr: {
+      size: "1080x1920 (1.5mb)",
+      duration: "10s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/clock-hip.mp4",
+    // videoPreview:"/mp4/streamStarts3-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1605964145/animated%20backgrounds/openR-thumbs/clock-hip-s_n70ski.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 ];
 
