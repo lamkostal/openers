@@ -116,7 +116,7 @@
     .card{
         overflow: hidden;
         position:relative;
-        padding:2.5rem 3rem 1.5rem;
+        padding:2rem 2rem 1rem;
         background-color: #fff;
         display:flex;
         flex-direction:column;

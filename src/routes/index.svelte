@@ -33,7 +33,6 @@
     /* --main-color: rgb(0, 168, 112); */
     --main-color: rgb(0, 168, 112);
     --main-dark-color: rgb(0, 134, 90);
-
     --sec-color: #f4f4f4;
     --main-text-color: #fff;
     --inv-main-text-color: rgb(63, 63, 63);
@@ -61,7 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 95vh;
     /* background-image: url("/herobg-lines.png"); */
     background-size: contain;
     background: transparent;
@@ -103,7 +102,7 @@
     position: absolute;
     left: calc(50% - 64px);
     bottom: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10vw;
   }
   .main__color {
     color: var(--main-text-color);
@@ -137,7 +136,7 @@
     margin: 2em 0;
     padding: 0em 02em 4em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 20px;
     /* grid-row-gap: 40px; */
   }
@@ -231,185 +230,262 @@
     top:70%;
     left:250px;
   }
+  /* WAVES STYLING */
+  .wave {
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  right: 0;
+}
+.wave:nth-of-type(1) {
+  --speed: 120;
+  --opacity: 0.5;
+  --height: 12;
+  --width: 320;
+  --lightness: 90;
+  --rise: 20;
+}
+.wave:nth-of-type(2) {
+  --speed: 80;
+  --opacity: 0.6;
+  --height: 10;
+  --width: 200;
+  --lightness: 95;
+  --rise: 5;
+}
+.wave:nth-of-type(3) {
+  --speed: 20;
+  --opacity: 1;
+  --height: 7;
+  --width: 120;
+  --lightness: 100;
+  --rise: 0;
+}
+.wave {
+  height: calc(var(--height, 0) * 1.5vh);
+  width: calc(var(--width, 0) * 1vw);
+  -webkit-animation: rise calc(var(--speed, 0) * 1.5s) infinite linear;
+          animation: rise calc(var(--speed, 0) * 1.5s) infinite linear;
+    opacity:var(--opacity)      
+}
+@media (max-width: 480px) {
+  .wave {
+    height: calc(var(--height, 0) * 0.75vh);
+  }
+}
+.wave path {
+  /* fill: hsl(0, 0%, calc(var(--lightness, 0) * 1%)); */
+  -webkit-animation: wave calc(var(--speed, 0) * 1s) infinite linear;
+          animation: wave calc(var(--speed, 0) * 1s) infinite linear;
+}
+@-webkit-keyframes wave {
+  to {
+    -webkit-transform: translate(-761px, 0);
+            transform: translate(-761px, 0);
+  }
+}
+@keyframes wave {
+  to {
+    -webkit-transform: translate(-761px, 0);
+            transform: translate(-761px, 0);
+  }
+}
+@-webkit-keyframes rise {
+  50% {
+    -webkit-transform: translate(0, calc(var(--rise) * -1%));
+            transform: translate(0, calc(var(--rise) * -1%));
+  }
+}
+@keyframes rise {
+  50% {
+    -webkit-transform: translate(0, calc(var(--rise) * -1%));
+            transform: translate(0, calc(var(--rise) * -1%));
+  }
+}
+ 
 
 </style>
 
 <svelte:head>
-<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
-<script type="text/javascript" async=true>
-(function() {
-  var host = window.location.hostname;
-  var element = document.createElement('script');
-  var firstScript = document.getElementsByTagName('script')[0];
-  var url = 'https://quantcast.mgr.consensu.org'
-    .concat('/choice/', '2Sm5GWREywCqZ', '/', host, '/choice.js')
-  var uspTries = 0;
-  var uspTriesLimit = 3;
-  element.async = true;
-  element.type = 'text/javascript';
-  element.src = url;
+  <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+  <script type="text/javascript" async=true>
+  (function() {
+    var host = window.location.hostname;
+    var element = document.createElement('script');
+    var firstScript = document.getElementsByTagName('script')[0];
+    var url = 'https://quantcast.mgr.consensu.org'
+      .concat('/choice/', '2Sm5GWREywCqZ', '/', host, '/choice.js')
+    var uspTries = 0;
+    var uspTriesLimit = 3;
+    element.async = true;
+    element.type = 'text/javascript';
+    element.src = url;
 
-  firstScript.parentNode.insertBefore(element, firstScript);
+    firstScript.parentNode.insertBefore(element, firstScript);
 
-  function makeStub() {
-    var TCF_LOCATOR_NAME = '__tcfapiLocator';
-    var queue = [];
-    var win = window;
-    var cmpFrame;
+    function makeStub() {
+      var TCF_LOCATOR_NAME = '__tcfapiLocator';
+      var queue = [];
+      var win = window;
+      var cmpFrame;
 
-    function addFrame() {
-      var doc = win.document;
-      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+      function addFrame() {
+        var doc = win.document;
+        var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
 
-      if (!otherCMP) {
-        if (doc.body) {
-          var iframe = doc.createElement('iframe');
+        if (!otherCMP) {
+          if (doc.body) {
+            var iframe = doc.createElement('iframe');
 
-          iframe.style.cssText = 'display:none';
-          iframe.name = TCF_LOCATOR_NAME;
-          doc.body.appendChild(iframe);
-        } else {
-          setTimeout(addFrame, 5);
-        }
-      }
-      return !otherCMP;
-    }
-
-    function tcfAPIHandler() {
-      var gdprApplies;
-      var args = arguments;
-
-      if (!args.length) {
-        return queue;
-      } else if (args[0] === 'setGdprApplies') {
-        if (
-          args.length > 3 &&
-          args[2] === 2 &&
-          typeof args[3] === 'boolean'
-        ) {
-          gdprApplies = args[3];
-          if (typeof args[2] === 'function') {
-            args[2]('set', true);
+            iframe.style.cssText = 'display:none';
+            iframe.name = TCF_LOCATOR_NAME;
+            doc.body.appendChild(iframe);
+          } else {
+            setTimeout(addFrame, 5);
           }
         }
-      } else if (args[0] === 'ping') {
-        var retr = {
-          gdprApplies: gdprApplies,
-          cmpLoaded: false,
-          cmpStatus: 'stub'
-        };
-
-        if (typeof args[2] === 'function') {
-          args[2](retr);
-        }
-      } else {
-        queue.push(args);
+        return !otherCMP;
       }
-    }
 
-    function postMessageEventHandler(event) {
-      var msgIsString = typeof event.data === 'string';
-      var json = {};
+      function tcfAPIHandler() {
+        var gdprApplies;
+        var args = arguments;
 
-      try {
-        if (msgIsString) {
-          json = JSON.parse(event.data);
-        } else {
-          json = event.data;
-        }
-      } catch (ignore) {}
-
-      var payload = json.__tcfapiCall;
-
-      if (payload) {
-        window.__tcfapi(
-          payload.command,
-          payload.version,
-          function(retValue, success) {
-            var returnMsg = {
-              __tcfapiReturn: {
-                returnValue: retValue,
-                success: success,
-                callId: payload.callId
-              }
-            };
-            if (msgIsString) {
-              returnMsg = JSON.stringify(returnMsg);
+        if (!args.length) {
+          return queue;
+        } else if (args[0] === 'setGdprApplies') {
+          if (
+            args.length > 3 &&
+            args[2] === 2 &&
+            typeof args[3] === 'boolean'
+          ) {
+            gdprApplies = args[3];
+            if (typeof args[2] === 'function') {
+              args[2]('set', true);
             }
-            event.source.postMessage(returnMsg, '*');
-          },
-          payload.parameter
-        );
-      }
-    }
+          }
+        } else if (args[0] === 'ping') {
+          var retr = {
+            gdprApplies: gdprApplies,
+            cmpLoaded: false,
+            cmpStatus: 'stub'
+          };
 
-    while (win) {
-      try {
-        if (win.frames[TCF_LOCATOR_NAME]) {
-          cmpFrame = win;
+          if (typeof args[2] === 'function') {
+            args[2](retr);
+          }
+        } else {
+          queue.push(args);
+        }
+      }
+
+      function postMessageEventHandler(event) {
+        var msgIsString = typeof event.data === 'string';
+        var json = {};
+
+        try {
+          if (msgIsString) {
+            json = JSON.parse(event.data);
+          } else {
+            json = event.data;
+          }
+        } catch (ignore) {}
+
+        var payload = json.__tcfapiCall;
+
+        if (payload) {
+          window.__tcfapi(
+            payload.command,
+            payload.version,
+            function(retValue, success) {
+              var returnMsg = {
+                __tcfapiReturn: {
+                  returnValue: retValue,
+                  success: success,
+                  callId: payload.callId
+                }
+              };
+              if (msgIsString) {
+                returnMsg = JSON.stringify(returnMsg);
+              }
+              event.source.postMessage(returnMsg, '*');
+            },
+            payload.parameter
+          );
+        }
+      }
+
+      while (win) {
+        try {
+          if (win.frames[TCF_LOCATOR_NAME]) {
+            cmpFrame = win;
+            break;
+          }
+        } catch (ignore) {}
+
+        if (win === window.top) {
           break;
         }
-      } catch (ignore) {}
-
-      if (win === window.top) {
-        break;
+        win = win.parent;
       }
-      win = win.parent;
+      if (!cmpFrame) {
+        addFrame();
+        win.__tcfapi = tcfAPIHandler;
+        win.addEventListener('message', postMessageEventHandler, false);
+      }
+    };
+
+    makeStub();
+
+    var uspStubFunction = function() {
+      var arg = arguments;
+      if (typeof window.__uspapi !== uspStubFunction) {
+        setTimeout(function() {
+          if (typeof window.__uspapi !== 'undefined') {
+            window.__uspapi.apply(window.__uspapi, arg);
+          }
+        }, 500);
+      }
+    };
+
+    var checkIfUspIsReady = function() {
+      uspTries++;
+      if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+        console.warn('USP is not accessible');
+      } else {
+        clearInterval(uspInterval);
+      }
+    };
+
+    if (typeof window.__uspapi === 'undefined') {
+      window.__uspapi = uspStubFunction;
+      var uspInterval = setInterval(checkIfUspIsReady, 6000);
     }
-    if (!cmpFrame) {
-      addFrame();
-      win.__tcfapi = tcfAPIHandler;
-      win.addEventListener('message', postMessageEventHandler, false);
-    }
-  };
+  })();
+  </script>
+  <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+    <!-- Primary Meta Tags -->
+  <title>openR  - animated visuals, free video openers resources</title>
+  <!-- META -->
+  <meta name="title" content="openR - VIDEO
+  OPENERS, free video openers resources">
+  <meta name="description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twitch or other content creator platform!">
 
-  makeStub();
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="openR - VIDEO
+  OPENERS, free video openers resources">
+  <meta property="og:description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
+  <meta property="og:image" content="/openR - Animated Visuals.png">
 
-  var uspStubFunction = function() {
-    var arg = arguments;
-    if (typeof window.__uspapi !== uspStubFunction) {
-      setTimeout(function() {
-        if (typeof window.__uspapi !== 'undefined') {
-          window.__uspapi.apply(window.__uspapi, arg);
-        }
-      }, 500);
-    }
-  };
-
-  var checkIfUspIsReady = function() {
-    uspTries++;
-    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
-      console.warn('USP is not accessible');
-    } else {
-      clearInterval(uspInterval);
-    }
-  };
-
-  if (typeof window.__uspapi === 'undefined') {
-    window.__uspapi = uspStubFunction;
-    var uspInterval = setInterval(checkIfUspIsReady, 6000);
-  }
-})();
-</script>
-<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
-	<!-- Primary Meta Tags -->
-<title>openR  - animated visuals, free video openers resources</title>
-<meta name="title" content="openR  - animated visuals, free video openers resources">
-<meta name="description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twitch or other content creator platform!">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://metatags.io/">
-<meta property="og:title" content="openR  - animated visuals, free video openers resources">
-<meta property="og:description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
-<meta property="og:image" content="/openR - Animated Visuals.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://metatags.io/">
-<meta property="twitter:title" content="openR  - animated visuals, free video openers resources">
-<meta property="twitter:description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
-<meta property="twitter:image" content="/openR - Animated Visuals.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="openR - VIDEO
+  OPENERS, free video openers resources">
+  <meta property="twitter:description" content="Videos for content creators. Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
+  <meta property="twitter:image" content="/openR - Animated Visuals.png">
 
 </svelte:head>
 
@@ -418,12 +494,11 @@
 <main>
 
   <section class="hero" id="hero">
- 
 
-    <h1 class="main__color">Animated Visuals</h1>
-
+        <h1 class="main__color">VIDEO OPENERS
+        </h1>
     <h2 class="main__color">
-      video resources
+      INTRO GRAPHICS
       <br />
       for content creators, designers, developers.
     </h2>
@@ -432,6 +507,46 @@
       download free video openers in full-HD with seamless pattern loops for your youtube,
       twich or other content creator platform!
     </h3>
+    
+    
+      <div class="waves-wrap">
+         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 52.917" preserveAspectRatio="none">
+      <defs>
+        <path id="wave" d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637 25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0 381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5 25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762 0v52.917H0z" fill="var(--main-dark-color)"></path>
+      </defs>
+      <g>
+        <use href="#wave"></use>
+      </g>
+      <g transform="translate(761 0)">
+        <use href="#wave"></use>
+      </g>
+    </svg>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 52.917" preserveAspectRatio="none">
+      <defs>
+        <path id="wave2" d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637 25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0 381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5 25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762 0v52.917H0z" fill="var(--sec-color)"></path>
+      </defs>
+      <g>
+        <use href="#wave2"></use>
+      </g>
+      <g transform="translate(761 0)">
+        <use href="#wave2"></use>
+      </g>
+    </svg>
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 52.917" preserveAspectRatio="none">
+      <defs>
+        <path id="wave3" d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637 25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0 381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5 25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762 0v52.917H0z" fill="var(--sec-color)"></path>
+      </defs>
+      <g>
+        <use href="#wave3"></use>
+      </g>
+      <g transform="translate(761 0)">
+        <use href="#wave3"></use>
+      </g>
+    </svg>
+      </div>
+      
+    
+    
     <figure>
       <svg
         width="100"
