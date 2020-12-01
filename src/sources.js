@@ -364,11 +364,50 @@ export let sources = [{
       format: "25fps mp4",
     },
     downLink: "/mp4/streamStarts6_hover.mp4",
-    // videoPreview:"/mp4/streamStarts-s.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1606312602/animated%20backgrounds/openR-thumbs/streamStarts6_hover-s_r3flwx.mp4",
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "number1",
+    category:"counters",
+    descr: {
+      size: "1080x1920 (0.45mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/num_1_sptn.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1606831568/animated%20backgrounds/openR-thumbs/num_1_sptn-s_s28ww6.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "number2",
+    category:"counters",
+    descr: {
+      size: "1080x1920 (0.45mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/num_2_sptn.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1606831567/animated%20backgrounds/openR-thumbs/num_2_sptn-s_niobz6.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "number3",
+    category:"counters",
+    descr: {
+      size: "1080x1920 (0.45mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/num_3_sptn.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1606831565/animated%20backgrounds/openR-thumbs/num_3_sptn-s_dmjd5e.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+
 
 ];
 
