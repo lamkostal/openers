@@ -43,6 +43,12 @@ const dispatch = createEventDispatcher();
 	        on:click="{() => current = 'stream'}"
         on:click={setCat}>Stream</button>
         </li>
+        <li>
+        <button transition:fade|local value="particles" 
+        	class:active="{current === 'particles'}"
+	        on:click="{() => current = 'particles'}"
+        on:click={setCat}>Particles</button>
+        </li>
     </ul>    
    
 </div>
@@ -57,13 +63,16 @@ const dispatch = createEventDispatcher();
     }
     @media (max-width:740px){
         .categories-menu{
-       
-        width:80vw;
+        width:50vw;
         }
+        .categories-menu_list li{
+        display: flex;
+        flex:1 0 100%;
+        justify-content: center;
+    }
        
     }
     .categories-menu_list{
-        
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -73,7 +82,7 @@ const dispatch = createEventDispatcher();
     }
     .categories-menu_list li{
         display: flex;
-        flex: 1;
+        flex:1 0 100px;
         justify-content: center;
     }
     button{

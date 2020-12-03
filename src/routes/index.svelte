@@ -143,7 +143,6 @@
 
   @media (max-width: 640px) {
     .grid {
-      
       grid-template-columns: 1fr;
       padding: 0em 0.5em 1em;
     }

@@ -379,7 +379,7 @@ export let sources = [{
     downLink: "/mp4/num_1_sptn.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1606831568/animated%20backgrounds/openR-thumbs/num_1_sptn-s_s28ww6.mp4",
     downloadFree: true,
-    seamless: true,
+    seamless: false,
   },
   {
     title: "number2",
@@ -392,7 +392,7 @@ export let sources = [{
     downLink: "/mp4/num_2_sptn.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1606831567/animated%20backgrounds/openR-thumbs/num_2_sptn-s_niobz6.mp4",
     downloadFree: true,
-    seamless: true,
+    seamless: false,
   },
   {
     title: "number3",
@@ -405,8 +405,35 @@ export let sources = [{
     downLink: "/mp4/num_3_sptn.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1606831565/animated%20backgrounds/openR-thumbs/num_3_sptn-s_dmjd5e.mp4",
     downloadFree: true,
+    seamless: false,
+  },
+  {
+    title: "particles-round",
+    category:"particles",
+    descr: {
+      size: "1080x1920 (0.55mb)",
+      duration: "6s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/particles-round.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1606936029/animated%20backgrounds/openR-thumbs/particles-round-s_xqns4j.mp4",
+    downloadFree: true,
     seamless: true,
   },
+  {
+    title: "particles-fireflies",
+    category:"particles",
+    descr: {
+      size: "1080x1920 (1.55mb)",
+      duration: "7s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/particles-fireflies.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607026650/animated%20backgrounds/openR-thumbs/particles-fireflies-s_trmuqy.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+
 
 
 ];
