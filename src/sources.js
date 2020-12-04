@@ -1,6 +1,6 @@
 export let sources = [{
     title: "Lamkos",
-    category:"text",
+    category:["text",],
     descr: {
       size: "",
       duration: "",
@@ -14,7 +14,7 @@ export let sources = [{
   },
   {
     title: "polyconnect",
-    category:"abstract",
+    category:["abstract",],
     descr: {
       size: "1920X1080 (1.08mb) ",
       duration: "4s",
@@ -30,7 +30,7 @@ export let sources = [{
   {
 
     title: "electrons",
-    category:"text",
+    category:["text",],
     descr: {
       size: "",
       duration: "",
@@ -46,7 +46,7 @@ export let sources = [{
   {
 
     title: "connect1",
-    category:"abstract",
+    category:["abstract",],
     descr: {
       size: "1920X1080 (1.03mb) ",
       duration: "3s",
@@ -60,7 +60,7 @@ export let sources = [{
   },
   {
     title: "jeskai-ink",
-    category:"text",
+    category:["text",],
     descr: {
       size: "4:055s 30fps mp4",
       duration: "",
@@ -76,7 +76,7 @@ export let sources = [{
   {
 
     title: "wavy-blobs",
-    category:"abstract",
+    category:["abstract",],
     descr: {
       size: "1920X1080 (0.35mb) ",
       duration: "4s",
@@ -90,7 +90,7 @@ export let sources = [{
   },
   {
     title: "Constellation",
-    category:"abstract",
+    category:["abstract",],
     descr: {
       size: "1080x1920 (0.7mb) ",
       duration: "4s",
@@ -104,7 +104,7 @@ export let sources = [{
   },
   {
     title: "Bokeh-green",
-    category:"abstract",
+    category:["abstract",],
     descr: {
       size: "1080x1920 (0.85mb) ",
       duration: "5s",
@@ -118,7 +118,7 @@ export let sources = [{
   },
   {
     title: "Bokeh-red",
-    category:"abstract",
+    category:["abstract",],
     descr: {
       size: "1080x1920 (0.7mb)",
       duration: "4s",
@@ -132,7 +132,7 @@ export let sources = [{
   },
   {
     title: "PsycSplash",
-    category:"abstract",
+    category:["abstract",],
     descr: {
       size: "1080x1920 (2.13mb)",
       duration: "10s",
@@ -148,7 +148,7 @@ export let sources = [{
   },
   {
     title: "Oceanic",
-    category:"text",
+    category:["text",],
     descr: {
       size: "1080x1920 (1.7mb)",
       duration: "5s",
@@ -162,7 +162,7 @@ export let sources = [{
   },
   {
     title: "Glitchy",
-    category:"text",
+    category:["text",],
     descr: {
       size: "",
       duration: "",
@@ -175,7 +175,7 @@ export let sources = [{
   },
   {
     title: "Cubic",
-    category:"text",
+    category:["text",],
     descr: {
       size: "",
       duration: "",
@@ -189,7 +189,7 @@ export let sources = [{
   },
   {
     title: "Countdown",
-    category:"counters",
+    category:["counters",],
     descr: {
       size: "1080x1920 (0.4mb)",
       duration: "4s",
@@ -203,7 +203,7 @@ export let sources = [{
   },
   {
     title: "Hey",
-    category:"text",
+    category:["text",],
     descr: {
       size: "1080x1920 (0.4mb)",
       duration: "4s",
@@ -217,7 +217,7 @@ export let sources = [{
   },
   {
     title: "Countdown2",
-    category:"counters",
+    category:["counters",],
     descr: {
       size: "1080x1920 (0.7mb)",
       duration: "4s",
@@ -231,7 +231,7 @@ export let sources = [{
   },
   {
     title: "Stream",
-    category:"stream",
+    category:["stream",],
     descr: {
       size: "1080x1920 (0.6mb)",
       duration: "4s",
@@ -245,7 +245,7 @@ export let sources = [{
   },
   {
         title: "Stream2",
-    category:"stream",
+    category:["stream",],
     descr: {
       size: "1080x1920 (4.5mb)",
       duration: "7s",
@@ -259,7 +259,7 @@ export let sources = [{
   },
   {
     title: "Blobsun",
-    category:"abstract",
+    category:["abstract",],
     descr: {
       size: "1080x1920 (0.5mb)",
       duration: "4s",
@@ -273,7 +273,7 @@ export let sources = [{
   },
   {
     title: "Interact",
-    category:"text",
+    category:["text",],
     descr: {
       size: "1080x1920 (2.7mb)",
       duration: "4s",
@@ -287,7 +287,7 @@ export let sources = [{
   },
   {
     title: "Stream3",
-    category:"stream",
+    category:["stream",],
     descr: {
       size: "1080x1920 (5mb)",
       duration: "7s",
@@ -301,7 +301,7 @@ export let sources = [{
   },
   {
     title: "Simple Count",
-    category:"counters",
+    category:["counters",],
     descr: {
       size: "1080x1920 (0.2mb)",
       duration: "5s",
@@ -315,7 +315,7 @@ export let sources = [{
   },
   {
     title: "Stream-shaky",
-    category:"stream",
+    category:["stream",],
     descr: {
       size: "1080x1920 (7mb)",
       duration: "7s",
@@ -329,7 +329,7 @@ export let sources = [{
   },
   {
     title: "Stream-play",
-    category:"stream",
+    category:["stream",],
     descr: {
       size: "1080x1920 (0.85mb)",
       duration: "4s",
@@ -343,7 +343,7 @@ export let sources = [{
   },
   {
     title: "Clock-hip",
-    category:"counters",
+    category:["counters",],
     descr: {
       size: "1080x1920 (1.5mb)",
       duration: "10s",
@@ -357,7 +357,7 @@ export let sources = [{
   },
   {
     title: "Stream-hover",
-    category:"stream",
+    category:["stream",],
     descr: {
       size: "1080x1920 (0.5mb)",
       duration: "4s",
@@ -370,7 +370,7 @@ export let sources = [{
   },
   {
     title: "number1",
-    category:"counters",
+    category:["counters",],
     descr: {
       size: "1080x1920 (0.45mb)",
       duration: "4s",
@@ -383,7 +383,7 @@ export let sources = [{
   },
   {
     title: "number2",
-    category:"counters",
+    category:["counters",],
     descr: {
       size: "1080x1920 (0.45mb)",
       duration: "4s",
@@ -396,7 +396,7 @@ export let sources = [{
   },
   {
     title: "number3",
-    category:"counters",
+    category:["counters",],
     descr: {
       size: "1080x1920 (0.45mb)",
       duration: "4s",
@@ -409,7 +409,7 @@ export let sources = [{
   },
   {
     title: "particles-round",
-    category:"particles",
+    category:["particles",],
     descr: {
       size: "1080x1920 (0.55mb)",
       duration: "6s",
@@ -422,7 +422,7 @@ export let sources = [{
   },
   {
     title: "particles-fireflies",
-    category:"particles",
+    category:["particles",],
     descr: {
       size: "1080x1920 (1.55mb)",
       duration: "7s",
@@ -431,6 +431,19 @@ export let sources = [{
     downLink: "/mp4/particles-fireflies.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607026650/animated%20backgrounds/openR-thumbs/particles-fireflies-s_trmuqy.mp4",
     downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "particles-soap",
+    category:["particles","text"],
+    descr: {
+      size: "1080x1920 (0.55mb)",
+      duration: "7s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/particles-soap.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607085150/animated%20backgrounds/openR-thumbs/particles-soap-s_pdwttl.mp4",
+    downloadFree: false,
     seamless: true,
   },
 

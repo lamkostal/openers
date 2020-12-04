@@ -2,10 +2,10 @@
   import Card from "../components/Card.svelte";
   import Modal from "../components/Modal.svelte";
   import Form from "../components/Form.svelte";
-  import {sources} from "../sources.js";
+  import { sources } from "../sources.js";
   import CatNav from "../components/CatNav.svelte";
-  import { fade } from 'svelte/transition';
-  
+  import { fade } from "svelte/transition";
+
   let style = "opacity:0;display:none;";
   // let style
   $: styled = style;
@@ -20,11 +20,11 @@
 
     // console.log("openfired")
   }
-  let filter="all";
-  $:filtered=filter;
-  function setFilter(event){
-    filtered=event.detail.category;
-    console.log(filtered)
+  let filter = "all";
+  $: filtered = filter;
+  function setFilter(event) {
+    filtered = event.detail.category;
+    console.log(filtered);
   }
 </script>
 
@@ -37,7 +37,6 @@
     --main-text-color: #fff;
     --inv-main-text-color: rgb(63, 63, 63);
     --sec-text-color: rgb(236, 236, 236);
-   
   }
   main {
     overflow: hidden;
@@ -47,9 +46,9 @@
   }
   section {
     position: relative;
-    margin:0;
+    margin: 0;
     padding: 1em;
-   background:  #f4f4f4;
+    background: #f4f4f4;
   }
   .section_desc {
     padding: 0 15px 40px;
@@ -65,7 +64,6 @@
     background-size: contain;
     background: transparent;
     /* background-color: var(--main-color); */
-
   }
   h1 {
     text-transform: uppercase;
@@ -116,7 +114,6 @@
     line-height: 2rem;
   }
   .gallery {
-    
     padding: 6em 0 4em;
   }
   hr {
@@ -147,7 +144,7 @@
       padding: 0em 0.5em 1em;
     }
   }
-  .totop{
+  .totop {
     transition: all 0.2s;
     display: grid;
     font-size: 1.5em;
@@ -159,32 +156,31 @@
     right: 40px;
     background: var(--main-dark-color);
     color: var(--main-text-color);
-    
 
-   box-shadow: 0 0 10px rgba(163, 163, 163,0);
+    box-shadow: 0 0 10px rgba(163, 163, 163, 0);
 
     border-radius: 50%;
-}
+  }
 
-.totop:hover{
-   box-shadow: 0 0 10px rgba(163, 163, 163,1);
-}
-@media (max-width:740px){
-  .totop{
-    display: grid;
-    font-size: 1.5em;
-    place-items: center;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    bottom: 50px;
-    right: 10px;
-    background: var(--main-dark-color);
-    color: var(--main-text-color);
-    
-    border-radius: 50%;
-}
-}
+  .totop:hover {
+    box-shadow: 0 0 10px rgba(163, 163, 163, 1);
+  }
+  @media (max-width: 740px) {
+    .totop {
+      display: grid;
+      font-size: 1.5em;
+      place-items: center;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      bottom: 50px;
+      right: 10px;
+      background: var(--main-dark-color);
+      color: var(--main-text-color);
+
+      border-radius: 50%;
+    }
+  }
   /* //svg styling// */
   .line-mouse1 {
     animation: line-mouse1-scroll 2s infinite;
@@ -205,297 +201,313 @@
       animation: none;
     }
   }
-  #contact{
-    position:relative;
+  #contact {
+    position: relative;
   }
-  .decorativ{
-    position:absolute;
+  .decorativ {
+    position: absolute;
   }
-  .plane{
-    width:60px;
-    bottom:84px;
-    right:38%;
+  .plane {
+    width: 60px;
+    bottom: 84px;
+    right: 38%;
   }
-  .service{
-    top:30%;
-    left:250px;
+  .service {
+    top: 30%;
+    left: 250px;
   }
-  .mails{
-    top:45%;
-    right:250px;
+  .mails {
+    top: 45%;
+    right: 250px;
   }
-  .bottle{
-    width:120px;
-    top:70%;
-    left:250px;
+  .bottle {
+    width: 120px;
+    top: 70%;
+    left: 250px;
   }
   /* WAVES STYLING */
   .wave {
-  position: absolute;
-  bottom: -5%;
-  left: 0;
-  right: 0;
-}
-.wave:nth-of-type(1) {
-  --speed: 120;
-  --opacity: 0.5;
-  --height: 12;
-  --width: 320;
-  --lightness: 90;
-  --rise: 20;
-}
-.wave:nth-of-type(2) {
-  --speed: 80;
-  --opacity: 0.6;
-  --height: 10;
-  --width: 200;
-  --lightness: 95;
-  --rise: 5;
-}
-.wave:nth-of-type(3) {
-  --speed: 20;
-  --opacity: 1;
-  --height: 7;
-  --width: 120;
-  --lightness: 100;
-  --rise: 0;
-}
-.wave {
-  height: calc(var(--height, 0) * 1.5vh);
-  width: calc(var(--width, 0) * 1vw);
-  -webkit-animation: rise calc(var(--speed, 0) * 1.5s) infinite linear;
-          animation: rise calc(var(--speed, 0) * 1.5s) infinite linear;
-    opacity:var(--opacity)      
-}
-@media (max-width: 480px) {
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    right: 0;
+  }
+  .wave:nth-of-type(1) {
+    --speed: 120;
+    --opacity: 0.5;
+    --height: 12;
+    --width: 320;
+    --lightness: 90;
+    --rise: 20;
+  }
+  .wave:nth-of-type(2) {
+    --speed: 80;
+    --opacity: 0.6;
+    --height: 10;
+    --width: 200;
+    --lightness: 95;
+    --rise: 5;
+  }
+  .wave:nth-of-type(3) {
+    --speed: 20;
+    --opacity: 1;
+    --height: 7;
+    --width: 120;
+    --lightness: 100;
+    --rise: 0;
+  }
   .wave {
-    height: calc(var(--height, 0) * 0.75vh);
+    height: calc(var(--height, 0) * 1.5vh);
+    width: calc(var(--width, 0) * 1vw);
+    -webkit-animation: rise calc(var(--speed, 0) * 1.5s) infinite linear;
+    animation: rise calc(var(--speed, 0) * 1.5s) infinite linear;
+    opacity: var(--opacity);
   }
-}
-.wave path {
-  /* fill: hsl(0, 0%, calc(var(--lightness, 0) * 1%)); */
-  -webkit-animation: wave calc(var(--speed, 0) * 1s) infinite linear;
-          animation: wave calc(var(--speed, 0) * 1s) infinite linear;
-}
-@-webkit-keyframes wave {
-  to {
-    -webkit-transform: translate(-761px, 0);
-            transform: translate(-761px, 0);
+  @media (max-width: 480px) {
+    .wave {
+      height: calc(var(--height, 0) * 0.75vh);
+    }
   }
-}
-@keyframes wave {
-  to {
-    -webkit-transform: translate(-761px, 0);
-            transform: translate(-761px, 0);
+  .wave path {
+    /* fill: hsl(0, 0%, calc(var(--lightness, 0) * 1%)); */
+    -webkit-animation: wave calc(var(--speed, 0) * 1s) infinite linear;
+    animation: wave calc(var(--speed, 0) * 1s) infinite linear;
   }
-}
-@-webkit-keyframes rise {
-  50% {
-    -webkit-transform: translate(0, calc(var(--rise) * -1%));
-            transform: translate(0, calc(var(--rise) * -1%));
+  @-webkit-keyframes wave {
+    to {
+      -webkit-transform: translate(-761px, 0);
+      transform: translate(-761px, 0);
+    }
   }
-}
-@keyframes rise {
-  50% {
-    -webkit-transform: translate(0, calc(var(--rise) * -1%));
-            transform: translate(0, calc(var(--rise) * -1%));
+  @keyframes wave {
+    to {
+      -webkit-transform: translate(-761px, 0);
+      transform: translate(-761px, 0);
+    }
   }
-}
- 
-
+  @-webkit-keyframes rise {
+    50% {
+      -webkit-transform: translate(0, calc(var(--rise) * -1%));
+      transform: translate(0, calc(var(--rise) * -1%));
+    }
+  }
+  @keyframes rise {
+    50% {
+      -webkit-transform: translate(0, calc(var(--rise) * -1%));
+      transform: translate(0, calc(var(--rise) * -1%));
+    }
+  }
 </style>
 
 <svelte:head>
   <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
-  <script type="text/javascript" async=true>
-  (function() {
-    var host = window.location.hostname;
-    var element = document.createElement('script');
-    var firstScript = document.getElementsByTagName('script')[0];
-    var url = 'https://quantcast.mgr.consensu.org'
-      .concat('/choice/', '2Sm5GWREywCqZ', '/', host, '/choice.js')
-    var uspTries = 0;
-    var uspTriesLimit = 3;
-    element.async = true;
-    element.type = 'text/javascript';
-    element.src = url;
+  <script type="text/javascript" async="true">
+    (function() {
+      var host = window.location.hostname;
+      var element = document.createElement("script");
+      var firstScript = document.getElementsByTagName("script")[0];
+      var url = "https://quantcast.mgr.consensu.org".concat(
+        "/choice/",
+        "2Sm5GWREywCqZ",
+        "/",
+        host,
+        "/choice.js"
+      );
+      var uspTries = 0;
+      var uspTriesLimit = 3;
+      element.async = true;
+      element.type = "text/javascript";
+      element.src = url;
 
-    firstScript.parentNode.insertBefore(element, firstScript);
+      firstScript.parentNode.insertBefore(element, firstScript);
 
-    function makeStub() {
-      var TCF_LOCATOR_NAME = '__tcfapiLocator';
-      var queue = [];
-      var win = window;
-      var cmpFrame;
+      function makeStub() {
+        var TCF_LOCATOR_NAME = "__tcfapiLocator";
+        var queue = [];
+        var win = window;
+        var cmpFrame;
 
-      function addFrame() {
-        var doc = win.document;
-        var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+        function addFrame() {
+          var doc = win.document;
+          var otherCMP = !!win.frames[TCF_LOCATOR_NAME];
 
-        if (!otherCMP) {
-          if (doc.body) {
-            var iframe = doc.createElement('iframe');
+          if (!otherCMP) {
+            if (doc.body) {
+              var iframe = doc.createElement("iframe");
 
-            iframe.style.cssText = 'display:none';
-            iframe.name = TCF_LOCATOR_NAME;
-            doc.body.appendChild(iframe);
-          } else {
-            setTimeout(addFrame, 5);
-          }
-        }
-        return !otherCMP;
-      }
-
-      function tcfAPIHandler() {
-        var gdprApplies;
-        var args = arguments;
-
-        if (!args.length) {
-          return queue;
-        } else if (args[0] === 'setGdprApplies') {
-          if (
-            args.length > 3 &&
-            args[2] === 2 &&
-            typeof args[3] === 'boolean'
-          ) {
-            gdprApplies = args[3];
-            if (typeof args[2] === 'function') {
-              args[2]('set', true);
+              iframe.style.cssText = "display:none";
+              iframe.name = TCF_LOCATOR_NAME;
+              doc.body.appendChild(iframe);
+            } else {
+              setTimeout(addFrame, 5);
             }
           }
-        } else if (args[0] === 'ping') {
-          var retr = {
-            gdprApplies: gdprApplies,
-            cmpLoaded: false,
-            cmpStatus: 'stub'
-          };
-
-          if (typeof args[2] === 'function') {
-            args[2](retr);
-          }
-        } else {
-          queue.push(args);
+          return !otherCMP;
         }
-      }
 
-      function postMessageEventHandler(event) {
-        var msgIsString = typeof event.data === 'string';
-        var json = {};
+        function tcfAPIHandler() {
+          var gdprApplies;
+          var args = arguments;
 
-        try {
-          if (msgIsString) {
-            json = JSON.parse(event.data);
-          } else {
-            json = event.data;
-          }
-        } catch (ignore) {}
-
-        var payload = json.__tcfapiCall;
-
-        if (payload) {
-          window.__tcfapi(
-            payload.command,
-            payload.version,
-            function(retValue, success) {
-              var returnMsg = {
-                __tcfapiReturn: {
-                  returnValue: retValue,
-                  success: success,
-                  callId: payload.callId
-                }
-              };
-              if (msgIsString) {
-                returnMsg = JSON.stringify(returnMsg);
+          if (!args.length) {
+            return queue;
+          } else if (args[0] === "setGdprApplies") {
+            if (
+              args.length > 3 &&
+              args[2] === 2 &&
+              typeof args[3] === "boolean"
+            ) {
+              gdprApplies = args[3];
+              if (typeof args[2] === "function") {
+                args[2]("set", true);
               }
-              event.source.postMessage(returnMsg, '*');
-            },
-            payload.parameter
-          );
-        }
-      }
+            }
+          } else if (args[0] === "ping") {
+            var retr = {
+              gdprApplies: gdprApplies,
+              cmpLoaded: false,
+              cmpStatus: "stub"
+            };
 
-      while (win) {
-        try {
-          if (win.frames[TCF_LOCATOR_NAME]) {
-            cmpFrame = win;
+            if (typeof args[2] === "function") {
+              args[2](retr);
+            }
+          } else {
+            queue.push(args);
+          }
+        }
+
+        function postMessageEventHandler(event) {
+          var msgIsString = typeof event.data === "string";
+          var json = {};
+
+          try {
+            if (msgIsString) {
+              json = JSON.parse(event.data);
+            } else {
+              json = event.data;
+            }
+          } catch (ignore) {}
+
+          var payload = json.__tcfapiCall;
+
+          if (payload) {
+            window.__tcfapi(
+              payload.command,
+              payload.version,
+              function(retValue, success) {
+                var returnMsg = {
+                  __tcfapiReturn: {
+                    returnValue: retValue,
+                    success: success,
+                    callId: payload.callId
+                  }
+                };
+                if (msgIsString) {
+                  returnMsg = JSON.stringify(returnMsg);
+                }
+                event.source.postMessage(returnMsg, "*");
+              },
+              payload.parameter
+            );
+          }
+        }
+
+        while (win) {
+          try {
+            if (win.frames[TCF_LOCATOR_NAME]) {
+              cmpFrame = win;
+              break;
+            }
+          } catch (ignore) {}
+
+          if (win === window.top) {
             break;
           }
-        } catch (ignore) {}
-
-        if (win === window.top) {
-          break;
+          win = win.parent;
         }
-        win = win.parent;
+        if (!cmpFrame) {
+          addFrame();
+          win.__tcfapi = tcfAPIHandler;
+          win.addEventListener("message", postMessageEventHandler, false);
+        }
       }
-      if (!cmpFrame) {
-        addFrame();
-        win.__tcfapi = tcfAPIHandler;
-        win.addEventListener('message', postMessageEventHandler, false);
+
+      makeStub();
+
+      var uspStubFunction = function() {
+        var arg = arguments;
+        if (typeof window.__uspapi !== uspStubFunction) {
+          setTimeout(function() {
+            if (typeof window.__uspapi !== "undefined") {
+              window.__uspapi.apply(window.__uspapi, arg);
+            }
+          }, 500);
+        }
+      };
+
+      var checkIfUspIsReady = function() {
+        uspTries++;
+        if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+          console.warn("USP is not accessible");
+        } else {
+          clearInterval(uspInterval);
+        }
+      };
+
+      if (typeof window.__uspapi === "undefined") {
+        window.__uspapi = uspStubFunction;
+        var uspInterval = setInterval(checkIfUspIsReady, 6000);
       }
-    };
-
-    makeStub();
-
-    var uspStubFunction = function() {
-      var arg = arguments;
-      if (typeof window.__uspapi !== uspStubFunction) {
-        setTimeout(function() {
-          if (typeof window.__uspapi !== 'undefined') {
-            window.__uspapi.apply(window.__uspapi, arg);
-          }
-        }, 500);
-      }
-    };
-
-    var checkIfUspIsReady = function() {
-      uspTries++;
-      if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
-        console.warn('USP is not accessible');
-      } else {
-        clearInterval(uspInterval);
-      }
-    };
-
-    if (typeof window.__uspapi === 'undefined') {
-      window.__uspapi = uspStubFunction;
-      var uspInterval = setInterval(checkIfUspIsReady, 6000);
-    }
-  })();
+    })();
   </script>
   <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
-    <!-- Primary Meta Tags -->
-  <title>openR  - animated visuals, free video openers resources</title>
+  <!-- Primary Meta Tags -->
+  <title>openR - animated visuals, free video openers resources</title>
   <!-- META -->
-  <meta name="title" content="openR - VIDEO
-  OPENERS, free video openers resources">
-  <meta name="description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twitch or other content creator platform!">
+  <meta
+    name="title"
+    content="openR - VIDEO OPENERS, free video openers resources" />
+  <meta
+    name="description"
+    content="Videos for content creators.Download free video openers in full-HD
+    with seamless pattern loops for your youtube, twitch or other content
+    creator platform!" />
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://metatags.io/">
-  <meta property="og:title" content="openR - VIDEO
-  OPENERS, free video openers resources">
-  <meta property="og:description" content="Videos for content creators.Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
-  <meta property="og:image" content="/openR - Animated Visuals.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://metatags.io/" />
+  <meta
+    property="og:title"
+    content="openR - VIDEO OPENERS, free video openers resources" />
+  <meta
+    property="og:description"
+    content="Videos for content creators.Download free video openers in full-HD
+    with seamless pattern loops for your youtube, twich or other content creator
+    platform!" />
+  <meta property="og:image" content="/openR - Animated Visuals.png" />
 
   <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://metatags.io/">
-  <meta property="twitter:title" content="openR - VIDEO
-  OPENERS, free video openers resources">
-  <meta property="twitter:description" content="Videos for content creators. Download free video openers in full-HD with seamless pattern loops for your youtube, twich or other content creator platform!">
-  <meta property="twitter:image" content="/openR - Animated Visuals.png">
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://metatags.io/" />
+  <meta
+    property="twitter:title"
+    content="openR - VIDEO OPENERS, free video openers resources" />
+  <meta
+    property="twitter:description"
+    content="Videos for content creators. Download free video openers in full-HD
+    with seamless pattern loops for your youtube, twich or other content creator
+    platform!" />
+  <meta property="twitter:image" content="/openR - Animated Visuals.png" />
 
 </svelte:head>
-
 
 <Modal on:close={close} style={styled} />
 <main>
 
   <section class="hero" id="hero">
 
-        <h1 class="main__color">VIDEO OPENERS
-        </h1>
+    <h1 class="main__color">VIDEO OPENERS</h1>
     <h2 class="main__color">
       INTRO GRAPHICS
       <br />
@@ -503,49 +515,79 @@
     </h2>
 
     <h3 class="main__color">
-      download free video openers in full-HD with seamless pattern loops for your youtube,
-      twich or other content creator platform!
+      download free video openers in full-HD with seamless pattern loops for
+      your youtube, twich or other content creator platform!
     </h3>
-    
-    
-      <div class="waves-wrap">
-         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 52.917" preserveAspectRatio="none">
-      <defs>
-        <path id="wave" d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637 25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0 381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5 25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762 0v52.917H0z" fill="var(--main-dark-color)"></path>
-      </defs>
-      <g>
-        <use href="#wave"></use>
-      </g>
-      <g transform="translate(761 0)">
-        <use href="#wave"></use>
-      </g>
-    </svg>
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 52.917" preserveAspectRatio="none">
-      <defs>
-        <path id="wave2" d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637 25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0 381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5 25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762 0v52.917H0z" fill="var(--sec-color)"></path>
-      </defs>
-      <g>
-        <use href="#wave2"></use>
-      </g>
-      <g transform="translate(761 0)">
-        <use href="#wave2"></use>
-      </g>
-    </svg>
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 52.917" preserveAspectRatio="none">
-      <defs>
-        <path id="wave3" d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637 25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0 381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5 25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762 0v52.917H0z" fill="var(--sec-color)"></path>
-      </defs>
-      <g>
-        <use href="#wave3"></use>
-      </g>
-      <g transform="translate(761 0)">
-        <use href="#wave3"></use>
-      </g>
-    </svg>
-      </div>
-      
-    
-    
+
+    <div class="waves-wrap">
+      <svg
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 762 52.917"
+        preserveAspectRatio="none">
+        <defs>
+          <path
+            id="wave"
+            d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637
+            25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0
+            381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5
+            25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762
+            0v52.917H0z"
+            fill="var(--main-dark-color)" />
+        </defs>
+        <g>
+          <use href="#wave" />
+        </g>
+        <g transform="translate(761 0)">
+          <use href="#wave" />
+        </g>
+      </svg>
+      <svg
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 762 52.917"
+        preserveAspectRatio="none">
+        <defs>
+          <path
+            id="wave2"
+            d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637
+            25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0
+            381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5
+            25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762
+            0v52.917H0z"
+            fill="var(--sec-color)" />
+        </defs>
+        <g>
+          <use href="#wave2" />
+        </g>
+        <g transform="translate(761 0)">
+          <use href="#wave2" />
+        </g>
+      </svg>
+      <svg
+        class="wave"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 762 52.917"
+        preserveAspectRatio="none">
+        <defs>
+          <path
+            id="wave3"
+            d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637
+            25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0
+            381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5
+            25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762
+            0v52.917H0z"
+            fill="var(--sec-color)" />
+        </defs>
+        <g>
+          <use href="#wave3" />
+        </g>
+        <g transform="translate(761 0)">
+          <use href="#wave3" />
+        </g>
+      </svg>
+    </div>
+
     <figure>
       <svg
         width="100"
@@ -590,39 +632,59 @@
       </h3>
     </div>
 
-    <CatNav on:setCategory="{setFilter}"/>
+    <CatNav on:setCategory={setFilter} />
 
     <div class="grid">
       {#each sources as source}
-        {#if source.category==filtered || filtered==="all"}<Card
-         
-          on:open={open}
-          seamless={source.seamless}
-          free={source.downloadFree}
-          downLink={source.downLink}
-          title={source.title}
-          description={source.descr}
-          videoPreview={source.videoPreview}
-         
-           />{/if}
+        {#if source.category.find(e=>e==filtered) == filtered || filtered === 'all'}
+          <Card
+            on:open={open}
+            seamless={source.seamless}
+            free={source.downloadFree}
+            downLink={source.downLink}
+            title={source.title}
+            description={source.descr}
+            videoPreview={source.videoPreview} />
+        {/if}
       {/each}
-    
+
     </div>
-       <a class="totop" title="go to top!" href="#gallery"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd" />
-      </svg></a>
+    <a class="totop" title="go to top!" href="#gallery">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414
+          0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1
+          1 0 001.414-1.414z"
+          clip-rule="evenodd" />
+      </svg>
+    </a>
     <hr class="width-60" />
-  
 
   </section>
 
   <!-- CONTACT FORM -->
 
   <section id="contact">
-    <img src="/paper-plane140x140.png" alt="paper plane" class="decorativ plane">
-    <img src="/sbottled-letter140x140.png" alt="bottled message" class="decorativ bottle">
-    <img src="/fast-email@140x140.png" alt="letters flying" class="decorativ mails">
-    <img src="/customer-service140x140.png" alt="customer service" class="decorativ service">
+    <img
+      src="/paper-plane140x140.png"
+      alt="paper plane"
+      class="decorativ plane" />
+    <img
+      src="/sbottled-letter140x140.png"
+      alt="bottled message"
+      class="decorativ bottle" />
+    <img
+      src="/fast-email@140x140.png"
+      alt="letters flying"
+      class="decorativ mails" />
+    <img
+      src="/customer-service140x140.png"
+      alt="customer service"
+      class="decorativ service" />
     <img src="/contact.png" alt="contact" />
     <div class="section_desc">
       <h2 class="ivert__color">Contact us</h2>
