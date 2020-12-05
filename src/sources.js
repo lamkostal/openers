@@ -446,6 +446,19 @@ export let sources = [{
     downloadFree: false,
     seamless: true,
   },
+  {
+    title: "particles-love",
+    category:["particles","text"],
+    descr: {
+      size: "1080x1920 (1.2mb)",
+      duration: "7s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/particles-love.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607186132/animated%20backgrounds/openR-thumbs/particles-love_ria2dr.mp4",
+    downloadFree: false,
+    seamless: true,
+  },
 
 
 
