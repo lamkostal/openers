@@ -456,7 +456,7 @@ export let sources = [{
     },
     downLink: "/mp4/particles-love.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607186132/animated%20backgrounds/openR-thumbs/particles-love_ria2dr.mp4",
-    downloadFree: false,
+    downloadFree: true,
     seamless: true,
   },
   {
@@ -469,8 +469,8 @@ export let sources = [{
     },
     downLink: "/mp4/particles-expanse.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607351523/animated%20backgrounds/openR-thumbs/particles-expanse-s_gf7p7e.mp4",
-    downloadFree: false,
-    seamless: true,
+    downloadFree: true,
+    seamless: false,
   },
 
 
