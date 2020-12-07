@@ -459,6 +459,19 @@ export let sources = [{
     downloadFree: false,
     seamless: true,
   },
+  {
+    title: "particles-expanse",
+    category:["particles","abstract"],
+    descr: {
+      size: "1080x1920 (1.6mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/particles-expanse.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607351523/animated%20backgrounds/openR-thumbs/particles-expanse-s_gf7p7e.mp4",
+    downloadFree: false,
+    seamless: true,
+  },
 
 
 
