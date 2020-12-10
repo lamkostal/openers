@@ -481,7 +481,7 @@ export let sources = [{
       format: "25fps mp4",
     },
     downLink: "/mp4/particles-love2.mp4",
-    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607619341/animated%20backgrounds/openR-thumbs/particles-love2-s_hisdup.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607620346/animated%20backgrounds/openR-thumbs/particles-love2-s_u60rcu.mp4",
     downloadFree: true,
     seamless: true,
   },
