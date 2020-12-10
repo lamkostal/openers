@@ -455,7 +455,7 @@ export let sources = [{
       format: "25fps mp4",
     },
     downLink: "/mp4/particles-love.mp4",
-    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607186132/animated%20backgrounds/openR-thumbs/particles-love_ria2dr.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607619520/animated%20backgrounds/openR-thumbs/particles-love-s_tdcgfn.mp4",
     downloadFree: true,
     seamless: true,
   },
@@ -471,6 +471,19 @@ export let sources = [{
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607351523/animated%20backgrounds/openR-thumbs/particles-expanse-s_gf7p7e.mp4",
     downloadFree: true,
     seamless: false,
+  },
+  {
+    title: "particles-love2",
+    category:["particles","text"],
+    descr: {
+      size: "1080x1920 (2.65mb)",
+      duration: "7s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/particles-love2.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607619341/animated%20backgrounds/openR-thumbs/particles-love2-s_hisdup.mp4",
+    downloadFree: true,
+    seamless: true,
   },
 
 
