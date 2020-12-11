@@ -485,6 +485,19 @@ export let sources = [{
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "particles-pixels",
+    category:["particles","text"],
+    descr: {
+      size: "1080x1920 (1mb)",
+      duration: "5s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/particles-pixels.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607698977/animated%20backgrounds/openR-thumbs/particles-pixels-s_odgoxu.mp4",
+    downloadFree: false,
+    seamless: false,
+  },
 
 
 
