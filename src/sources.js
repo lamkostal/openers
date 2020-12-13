@@ -506,7 +506,7 @@ export let sources = [{
       duration: "5s",
       format: "25fps mp4",
     },
-    downLink: "/mp4/DoubleHelix-s.mp4",
+    downLink: "/mp4/DoubleHelix.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607870776/animated%20backgrounds/openR-thumbs/DoubleHelix-s_euzsfq.mp4",
     downloadFree: true,
     seamless: false,
