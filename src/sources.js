@@ -498,6 +498,19 @@ export let sources = [{
     downloadFree: false,
     seamless: false,
   },
+  {
+    title: "Double Helix",
+    category:["particles",],
+    descr: {
+      size: "1080x1920 (5.6mb)",
+      duration: "5s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/DoubleHelix-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1607870776/animated%20backgrounds/openR-thumbs/DoubleHelix-s_euzsfq.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
 
 
 
