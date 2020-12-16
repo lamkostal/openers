@@ -511,6 +511,20 @@ export let sources = [{
     downloadFree: true,
     seamless: false,
   },
+  {
+    title: "Molecule Soup",
+    category:["abstract",],
+    descr: {
+      size: "1080x1920 (2.45mb)",
+      duration: "5s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/molsoup.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608148653/animated%20backgrounds/openR-thumbs/molsoup-s_xfbprb.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+
 
 
 
