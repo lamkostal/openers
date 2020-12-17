@@ -14,7 +14,8 @@
     onMount(async () => {
 		const observer = lozad('.lozad', {
     rootMargin: '400px 0px',
-    enableAutoReload: false,
+     threshold: 0.1,
+    enableAutoReload: true,
    
 }); // lazy loads elements with default selector as '.lozad'
     observer.observe();
