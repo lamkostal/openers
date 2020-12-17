@@ -14,8 +14,8 @@
     onMount(async () => {
 		const observer = lozad('.lozad', {
     rootMargin: '400px 0px',
-     threshold: 0.1,
-    enableAutoReload: true,
+    threshold: 0.1,
+    enableAutoReload: false,
    
 }); // lazy loads elements with default selector as '.lozad'
     observer.observe();
@@ -26,10 +26,9 @@
     <div class="card" in:fly="{{ y: 200, duration: 1000 }}" out:fade="{{ duration: 200 }}">
         {#if free}<div class="ribbon script-text">free</div>{/if}
         <div class="thumb">
-            <video class="lozad" autoplay loop muted playsinline loading="lazy" style="max-width:100%">  
+            <video class="lozad" autoplay loop muted playsinline  style="max-width:100%">  
                 <source 
                 data-src="{videoPreview}" 
-               
                 type="video/mp4">  
             </video>  
         </div>
