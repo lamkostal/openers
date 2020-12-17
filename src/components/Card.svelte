@@ -13,8 +13,9 @@
     }
     onMount(async () => {
 		const observer = lozad('.lozad', {
-    rootMargin: '400px 0px', // syntax similar to that of CSS Margin
-    // ratio of element convergence
+    rootMargin: '400px 0px',
+    enableAutoReload: false,
+   
 }); // lazy loads elements with default selector as '.lozad'
     observer.observe();
 	});
