@@ -163,7 +163,7 @@
   {/if}
   <div class="thumb">
     <video class="lozad" autoplay loop muted playsinline style="max-width:100%">
-      <source data-src={videoPreview} src={videoPreview} type="video/mp4" />
+      <source data-src={videoPreview}  type="video/mp4" />
     </video>
   </div>
   <div class="text">
