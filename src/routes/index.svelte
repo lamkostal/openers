@@ -5,8 +5,7 @@
   import { sources } from "../sources.js";
   import CatNav from "../components/CatNav.svelte";
   import { fade } from "svelte/transition";
-  import lozad from "lozad";
-  import { onMount } from "svelte";
+  
 
   let style = "opacity:0;display:none;";
   
@@ -26,19 +25,7 @@
     console.log(filtered);
   }
   
-//  lazyload
 
-  onMount(async () => {
-    let videoEl = document.querySelectorAll(".lozad");
-    // console.log(videoEl)
-    // videoEl.forEach((e)=>e.play())
-    const observer = lozad(videoEl, {
-      rootMargin: "400px 0px",
-      threshold: 0.1,
-      enableAutoReload: true
-    });
-    observer.observe();
-  });
 </script>
 
 <style>

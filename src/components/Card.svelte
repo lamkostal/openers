@@ -1,7 +1,8 @@
 <script>
   export let title, description, downLink, free, seamless, videoPreview;
   import { fade, fly, slide } from "svelte/transition";
-
+  import lozad from "lozad";
+  import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
@@ -9,6 +10,19 @@
     dispatch("open");
     console.log("dispatched from component");
   }
+  //  lazyload
+
+  onMount(async () => {
+    let videoEl = document.querySelectorAll(".lozad");
+    // console.log(videoEl)
+    // videoEl.forEach((e)=>e.play())
+    const observer = lozad(videoEl, {
+      rootMargin: "400px 0px",
+      threshold: 0.1,
+      enableAutoReload: true
+    });
+    observer.observe();
+  });
 </script>
 
 <style>
