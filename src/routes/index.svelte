@@ -5,20 +5,19 @@
   import { sources } from "../sources.js";
   import CatNav from "../components/CatNav.svelte";
   import { fade } from "svelte/transition";
+  import lozad from "lozad";
+  import { onMount } from "svelte";
 
   let style = "opacity:0;display:none;";
-  // let style
+  
   $: styled = style;
   function close() {
     styled = "opacity:0;";
     setTimeout(() => (styled = "opacity:0;display:none;"), 1000);
-    // console.log("fired")
   }
   function open() {
     styled = "opacity:0;display:flex;";
     setTimeout(() => (styled = "opacity:1;display:flex;"), 500);
-
-    // console.log("openfired")
   }
   let filter = "all";
   $: filtered = filter;
@@ -26,6 +25,20 @@
     filtered = event.detail.category;
     console.log(filtered);
   }
+  
+//  lazyload
+
+  onMount(async () => {
+    let videoEl = document.querySelectorAll(".lozad");
+    // console.log(videoEl)
+    // videoEl.forEach((e)=>e.play())
+    const observer = lozad(videoEl, {
+      rootMargin: "400px 0px",
+      threshold: 0.1,
+      enableAutoReload: true
+    });
+    observer.observe();
+  });
 </script>
 
 <style>
@@ -636,7 +649,7 @@
 
     <div class="grid">
       {#each sources as source}
-        {#if source.category.find(e=>e==filtered) == filtered || filtered === 'all'}
+        {#if source.category.find(e => e == filtered) == filtered || filtered === 'all'}
           <Card
             on:open={open}
             seamless={source.seamless}
