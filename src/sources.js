@@ -512,7 +512,7 @@ export let sources = [{
     seamless: false,
   },
   {
-    title: "Molecule Soup",
+    title: "Molecular Soup",
     category:["abstract",],
     descr: {
       size: "1080x1920 (2.45mb)",
@@ -523,6 +523,19 @@ export let sources = [{
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608148653/animated%20backgrounds/openR-thumbs/molsoup-s_xfbprb.mp4",
     downloadFree: true,
     seamless: true,
+  },
+  {
+    title: "Elastic",
+    category:["text",],
+    descr: {
+      size: "1080x1920 (0.65mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/elastic.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608484000/animated%20backgrounds/openR-thumbs/elastic-s_nokxmn.mp4",
+    downloadFree: false,
+    seamless: false,
   },
 
 
