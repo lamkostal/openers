@@ -550,6 +550,46 @@ export let sources = [{
     downloadFree: false,
     seamless: false,
   },
+  {
+    title: "number3-rays",
+    category:["counters",],
+    descr: {
+      size: "1080x1920 (0.3mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/num_3_rays.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608731648/animated%20backgrounds/openR-thumbs/num_3_rays-s_pevmec.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+  {
+    title: "number2-rays",
+    category:["counters",],
+    descr: {
+      size: "1080x1920 (0.3mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/num_2_rays.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608740857/animated%20backgrounds/openR-thumbs/num_2_rays-s_m2ooo4.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+  {
+    title: "number1-rays",
+    category:["counters",],
+    descr: {
+      size: "1080x1920 (0.25mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/num_1_rays.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608740858/animated%20backgrounds/openR-thumbs/num_1_rays-s_i1x0tz.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+
 
 
 
