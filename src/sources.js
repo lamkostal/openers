@@ -589,6 +589,45 @@ export let sources = [{
     downloadFree: true,
     seamless: false,
   },
+  {
+    title: "letters-hover",
+    category:["text",],
+    descr: {
+      size: "1080x1920 (0.1mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/letters1.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608919829/animated%20backgrounds/openR-thumbs/letters1_-_s_djfqov.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "letters-hover2",
+    category:["text",],
+    descr: {
+      size: "1080x1920 (0.1mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/letters2.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608919830/animated%20backgrounds/openR-thumbs/letters2_-_s_a0k0gk.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "lines",
+    category:["text",],
+    descr: {
+      size: "1080x1920 (0.1mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/lines-bg.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608919829/animated%20backgrounds/openR-thumbs/lines-bg_-_s_beg8xs.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 
 
