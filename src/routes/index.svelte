@@ -129,8 +129,9 @@
   } */
 
   .grid {
+    max-width: 1600px;
     position: relative;
-    margin: 2em 0;
+    margin: 2em auto;
     padding: 0em 02em 4em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

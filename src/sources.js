@@ -617,7 +617,7 @@ export let sources = [{
   },
   {
     title: "lines",
-    category:["text",],
+    category:["abstract",],
     descr: {
       size: "1080x1920 (0.1mb)",
       duration: "4s",
@@ -627,6 +627,19 @@ export let sources = [{
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608919829/animated%20backgrounds/openR-thumbs/lines-bg_-_s_beg8xs.mp4",
     downloadFree: true,
     seamless: true,
+  },
+  {
+    title: "FUI",
+    category:["text",],
+    descr: {
+      size: "1080x1920 (1.55mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/fui.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1608994434/animated%20backgrounds/openR-thumbs/fui-s_ftxrw4.mp4",
+    downloadFree: true,
+    seamless: false,
   },
 
 
