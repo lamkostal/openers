@@ -39,7 +39,7 @@
     --sec-text-color: rgb(236, 236, 236);
   }
   main {
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
     padding: 0em 0;
     /* margin: 0 auto; */
@@ -54,6 +54,7 @@
     padding: 0 15px 40px;
   }
   .hero {
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -109,7 +110,7 @@
     color: var(--inv-main-text-color);
   }
   .max-char {
-    max-width: 60ch;
+    max-width: 55ch;
     margin: auto;
     line-height: 2rem;
   }
@@ -132,7 +133,7 @@
     max-width: 1600px;
     position: relative;
     margin: 2em auto;
-    padding: 0em 02em 4em;
+    padding: 0em 06em 4em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 20px;
@@ -146,22 +147,27 @@
     }
   }
   .totop {
+    
+    padding:2px;
     transition: all 0.2s;
     display: grid;
-    font-size: 1.5em;
+    font-size: 1.2em;
     place-items: center;
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
+    top:800px;
+    left:20px;
     width: 40px;
-    height: 40px;
-    bottom: 90px;
-    right: 40px;
+    height: auto;
+    /* right: 0px; */
     background: var(--main-dark-color);
     color: var(--main-text-color);
 
-    box-shadow: 0 0 10px rgba(163, 163, 163, 0);
-
+    box-shadow: 0 0 5px rgba(163, 163, 163, 0);
+    z-index:1000;
     border-radius: 50%;
   }
+  .totop>svg{width: 40px}
 
   .totop:hover {
     box-shadow: 0 0 10px rgba(163, 163, 163, 1);
@@ -211,7 +217,7 @@
   .plane {
     width: 60px;
     bottom: 84px;
-    right: 38%;
+    right: 40%;
   }
   .service {
     top: 30%;
@@ -634,8 +640,21 @@
     </div>
 
     <CatNav on:setCategory={setFilter} />
-
+    <a class="totop" title="go to top!" href="#gallery">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414
+          0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1
+          1 0 001.414-1.414z"
+          clip-rule="evenodd" />
+      </svg>
+    </a>
     <div class="grid">
+    
       {#each sources as source}
         {#if source.category.find(e => e == filtered) == filtered || filtered === 'all'}
           <Card
@@ -650,19 +669,7 @@
       {/each}
 
     </div>
-    <a class="totop" title="go to top!" href="#gallery">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor">
-        <path
-          fill-rule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414
-          0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1
-          1 0 001.414-1.414z"
-          clip-rule="evenodd" />
-      </svg>
-    </a>
+    
     <hr class="width-60" />
 
   </section>
@@ -691,7 +698,8 @@
       <h2 class="ivert__color">Contact us</h2>
       <h3 class="ivert__color max-char">
         Ask for a custom solution that we can provide, for example add your
-        brand name to an existing visualisation. We 'll get back at you ASAP!'
+        brand name to an existing visualisation. We will get back to you ASAP! <br>
+        Also send us your ideas about what other type of graphics or content you would like openR to have!
       </h3>
     </div>
 

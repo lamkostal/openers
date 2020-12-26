@@ -235,7 +235,7 @@
     <div class="buttons_wrap">
       {#if free}
         <span class="card-text-block">
-          <span>Download video file</span>
+          <span>Download file</span>
           <a
             title="download {title}"
             href={downLink}
