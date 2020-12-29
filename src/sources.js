@@ -641,6 +641,19 @@ export let sources = [{
     downloadFree: true,
     seamless: false,
   },
+  {
+    title: "Sea",
+    category:["abstract",],
+    descr: {
+      size: "1080x1920 (2.5mb)",
+      duration: "10s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/sea.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1609235393/animated%20backgrounds/openR-thumbs/sea-vs_dyoutg.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 
 

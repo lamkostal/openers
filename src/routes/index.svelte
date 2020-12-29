@@ -155,12 +155,11 @@
     place-items: center;
     position: -webkit-sticky;
     position: sticky;
-    top:800px;
-    left:20px;
+    top:90vh;
+    left:95vw;
     width: 40px;
     height: auto;
-    /* right: 0px; */
-    background: var(--main-dark-color);
+    background: var(--main-color);
     color: var(--main-text-color);
 
     box-shadow: 0 0 5px rgba(163, 163, 163, 0);
