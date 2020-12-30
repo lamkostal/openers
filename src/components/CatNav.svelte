@@ -2,7 +2,7 @@
   import {createEventDispatcher} from 'svelte';
   import { fade } from "svelte/transition";
 const dispatch = createEventDispatcher();
-    let current="all";
+    let current="featured";
     let cat
     function setCat(){
      cat=this.value
@@ -14,11 +14,13 @@ const dispatch = createEventDispatcher();
 <div class="categories-menu">
     <ul class="categories-menu_list">
         <li>
-          <button transition:fade|local value="all" 
-          	class:active="{current === 'all'}"
-	        on:click="{() => current = 'all'}"
+          <button transition:fade|local value="featured" 
+          	class:active="{current === 'featured'}"
+	        on:click="{() => current = 'featured'}"
             on:click={setCat}
-         >All</button></li>
+         >Featured</button></li>
+        
+       
         <li>
         <button transition:fade|local value="abstract" 
         	class:active="{current === 'abstract'}"
@@ -49,6 +51,12 @@ const dispatch = createEventDispatcher();
 	        on:click="{() => current = 'particles'}"
         on:click={setCat}>Particles</button>
         </li>
+         <li>
+          <button transition:fade|local value="all" 
+          	class:active="{current === 'all'}"
+	        on:click="{() => current = 'all'}"
+            on:click={setCat}
+         >view <mark>All</mark></button></li>
     </ul>    
    
 </div>

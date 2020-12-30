@@ -18,7 +18,7 @@
     styled = "opacity:0;display:flex;";
     setTimeout(() => (styled = "opacity:1;display:flex;"), 500);
   }
-  let filter = "all";
+  let filter = "featured";
   $: filtered = filter;
   function setFilter(event) {
     filtered = event.detail.category;
@@ -172,18 +172,18 @@
     box-shadow: 0 0 10px rgba(163, 163, 163, 1);
   }
   @media (max-width: 740px) {
+    main{overflow: hidden;}
     .totop {
-      display: grid;
+      display: none;
       font-size: 1.5em;
       place-items: center;
-      position: absolute;
+      position: relative;
       width: 40px;
       height: 40px;
-      bottom: 50px;
-      right: 10px;
+      bottom: 0px;
+      right: 40px;
       background: var(--main-dark-color);
       color: var(--main-text-color);
-
       border-radius: 50%;
     }
   }

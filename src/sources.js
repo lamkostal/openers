@@ -1,6 +1,6 @@
 export let sources = [{
     title: "Lamkos",
-    category:["text",],
+    category:["text","featured"],
     descr: {
       size: "",
       duration: "",
@@ -14,7 +14,7 @@ export let sources = [{
   },
   {
     title: "polyconnect",
-    category:["abstract",],
+    category:["abstract","featured"],
     descr: {
       size: "1920X1080 (1.08mb) ",
       duration: "4s",
@@ -60,7 +60,7 @@ export let sources = [{
   },
   {
     title: "jeskai-ink",
-    category:["text",],
+    category:["text","featured"],
     descr: {
       size: "4:055s 30fps mp4",
       duration: "",
@@ -104,7 +104,7 @@ export let sources = [{
   },
   {
     title: "Bokeh-green",
-    category:["abstract",],
+    category:["abstract","featured"],
     descr: {
       size: "1080x1920 (0.85mb) ",
       duration: "5s",
@@ -175,7 +175,7 @@ export let sources = [{
   },
   {
     title: "Cubic",
-    category:["text",],
+    category:["text","featured"],
     descr: {
       size: "",
       duration: "",
@@ -231,7 +231,7 @@ export let sources = [{
   },
   {
     title: "Stream",
-    category:["stream",],
+    category:["stream","featured"],
     descr: {
       size: "1080x1920 (0.6mb)",
       duration: "4s",
@@ -273,7 +273,7 @@ export let sources = [{
   },
   {
     title: "Interact",
-    category:["text",],
+    category:["text","featured"],
     descr: {
       size: "1080x1920 (2.7mb)",
       duration: "4s",
@@ -329,7 +329,7 @@ export let sources = [{
   },
   {
     title: "Stream-play",
-    category:["stream",],
+    category:["stream","featured"],
     descr: {
       size: "1080x1920 (0.85mb)",
       duration: "4s",
@@ -357,7 +357,7 @@ export let sources = [{
   },
   {
     title: "Stream-hover",
-    category:["stream",],
+    category:["stream","featured"],
     descr: {
       size: "1080x1920 (0.5mb)",
       duration: "4s",
@@ -474,7 +474,7 @@ export let sources = [{
   },
   {
     title: "particles-love2",
-    category:["particles","text"],
+    category:["particles","text","featured"],
     descr: {
       size: "1080x1920 (2.65mb)",
       duration: "7s",
@@ -500,7 +500,7 @@ export let sources = [{
   },
   {
     title: "Double Helix",
-    category:["particles",],
+    category:["particles","featured"],
     descr: {
       size: "1080x1920 (5.6mb)",
       duration: "5s",
@@ -539,7 +539,7 @@ export let sources = [{
   },
   {
     title: "Warp",
-    category:["text",],
+    category:["text","featured"],
     descr: {
       size: "1080x1920 (0.3mb)",
       duration: "4s",
@@ -630,7 +630,7 @@ export let sources = [{
   },
   {
     title: "FUI",
-    category:["text",],
+    category:["text","featured"],
     descr: {
       size: "1080x1920 (1.55mb)",
       duration: "4s",
@@ -651,6 +651,19 @@ export let sources = [{
     },
     downLink: "/mp4/sea.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1609235393/animated%20backgrounds/openR-thumbs/sea-vs_dyoutg.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "blob-num1",
+    category:["abstract","text","counters"],
+    descr: {
+      size: "1080x1920 (0.45mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/wavy-blobs-num1.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1609353165/animated%20backgrounds/openR-thumbs/wavy-blobs-num1-vs_qvopgi.mp4",
     downloadFree: true,
     seamless: true,
   },
