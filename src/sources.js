@@ -1,17 +1,4 @@
-export let sources = [{
-    title: "Lamkos",
-    category:["text","featured"],
-    descr: {
-      size: "",
-      duration: "",
-      format: "",
-    },
-    downLink: "/mp4/lamkos.mp4",
-    // videoPreview:"/mp4/lamkos-s.mp4",
-    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722436/animated%20backgrounds/openR-thumbs/lamkos-s_r910g1.mp4",
-    downloadFree: false,
-    seamless: false,
-  },
+export let sources = [
   {
     title: "polyconnect",
     category:["abstract","featured"],
@@ -57,6 +44,20 @@ export let sources = [{
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722443/animated%20backgrounds/openR-thumbs/connect1-s_jbxgq2.mp4",
     downloadFree: true,
     seamless: true,
+  },
+  {
+    title: "Lamkos",
+    category:["text","featured"],
+    descr: {
+      size: "",
+      duration: "",
+      format: "",
+    },
+    downLink: "/mp4/lamkos.mp4",
+    // videoPreview:"/mp4/lamkos-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722436/animated%20backgrounds/openR-thumbs/lamkos-s_r910g1.mp4",
+    downloadFree: false,
+    seamless: false,
   },
   {
     title: "jeskai-ink",
@@ -664,6 +665,19 @@ export let sources = [{
     },
     downLink: "/mp4/wavy-blobs-num1.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1609353165/animated%20backgrounds/openR-thumbs/wavy-blobs-num1-vs_qvopgi.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "Pebbles",
+    category:["text","particles"],
+    descr: {
+      size: "1080x1920 (0.5mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/pebbles.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1609865872/animated%20backgrounds/openR-thumbs/pebbles-s_qkoobu.mp4",
     downloadFree: true,
     seamless: true,
   },
