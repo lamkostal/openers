@@ -1,6 +1,6 @@
 export let sources = [
   {
-    title: "polyconnect",
+    title: "Polyconnect",
     category:["abstract","featured"],
     descr: {
       size: "1920X1080 (1.08mb) ",
@@ -16,7 +16,7 @@ export let sources = [
   },
   {
 
-    title: "electrons",
+    title: "Electrons",
     category:["text",],
     descr: {
       size: "",
@@ -32,7 +32,7 @@ export let sources = [
   },
   {
 
-    title: "connect1",
+    title: "Connect1",
     category:["abstract",],
     descr: {
       size: "1920X1080 (1.03mb) ",
@@ -60,7 +60,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "jeskai-ink",
+    title: "Jeskai-ink",
     category:["text","featured"],
     descr: {
       size: "4:055s 30fps mp4",
@@ -76,7 +76,7 @@ export let sources = [
 
   {
 
-    title: "wavy-blobs",
+    title: "Wavy-blobs",
     category:["abstract",],
     descr: {
       size: "1920X1080 (0.35mb) ",
@@ -85,7 +85,7 @@ export let sources = [
     },
     downLink: "/mp4/wavy-blobs.mp4",
     // videoPreview:"/mp4/wavy-blobs-s.mp4",
-    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722439/animated%20backgrounds/openR-thumbs/wavy-blobs-s_n3j0f7.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1610132939/animated%20backgrounds/openR-thumbs/wavy-blobs-vs_f9tmkr.mp4",
     downloadFree: true,
     seamless: true,
   },
@@ -370,7 +370,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "number1",
+    title: "Number1",
     category:["counters",],
     descr: {
       size: "1080x1920 (0.45mb)",
@@ -383,7 +383,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "number2",
+    title: "Number2",
     category:["counters",],
     descr: {
       size: "1080x1920 (0.45mb)",
@@ -396,7 +396,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "number3",
+    title: "Number3",
     category:["counters",],
     descr: {
       size: "1080x1920 (0.45mb)",
@@ -409,7 +409,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "particles-round",
+    title: "Particles-round",
     category:["particles",],
     descr: {
       size: "1080x1920 (0.55mb)",
@@ -422,7 +422,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "particles-fireflies",
+    title: "Particles-fireflies",
     category:["particles",],
     descr: {
       size: "1080x1920 (1.55mb)",
@@ -435,7 +435,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "particles-soap",
+    title: "Particles-soap",
     category:["particles","text"],
     descr: {
       size: "1080x1920 (0.55mb)",
@@ -448,7 +448,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "particles-love",
+    title: "Particles-love",
     category:["particles","text"],
     descr: {
       size: "1080x1920 (1.2mb)",
@@ -461,7 +461,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "particles-expanse",
+    title: "Particles-expanse",
     category:["particles","abstract"],
     descr: {
       size: "1080x1920 (1.6mb)",
@@ -474,7 +474,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "particles-love2",
+    title: "Particles-love2",
     category:["particles","text","featured"],
     descr: {
       size: "1080x1920 (2.65mb)",
@@ -487,7 +487,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "particles-pixels",
+    title: "Particles-pixels",
     category:["particles","text"],
     descr: {
       size: "1080x1920 (1mb)",
@@ -552,7 +552,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "number3-rays",
+    title: "Number3-rays",
     category:["counters",],
     descr: {
       size: "1080x1920 (0.3mb)",
@@ -565,7 +565,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "number2-rays",
+    title: "Number2-rays",
     category:["counters",],
     descr: {
       size: "1080x1920 (0.3mb)",
@@ -578,7 +578,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "number1-rays",
+    title: "Number1-rays",
     category:["counters",],
     descr: {
       size: "1080x1920 (0.25mb)",
@@ -591,7 +591,7 @@ export let sources = [
     seamless: false,
   },
   {
-    title: "letters-hover",
+    title: "Letters-hover",
     category:["text",],
     descr: {
       size: "1080x1920 (0.1mb)",
@@ -604,7 +604,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "letters-hover2",
+    title: "Letters-hover2",
     category:["text",],
     descr: {
       size: "1080x1920 (0.1mb)",
@@ -617,7 +617,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "lines",
+    title: "Lines",
     category:["abstract",],
     descr: {
       size: "1080x1920 (0.1mb)",
@@ -656,7 +656,7 @@ export let sources = [
     seamless: true,
   },
   {
-    title: "blob-num1",
+    title: "Blob-num1",
     category:["abstract","text","counters"],
     descr: {
       size: "1080x1920 (0.45mb)",
