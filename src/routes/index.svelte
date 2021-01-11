@@ -517,11 +517,11 @@
     <h2 class="main__color">
       INTRO GRAPHICS
       <br />
-      for content creators, designers, developers.
+      for content creators, editors, developers.
     </h2>
 
     <h3 class="main__color">
-      download free video openers in full-HD with seamless pattern loops for
+      download free video elements in full-HD with seamless loops for
       your youtube, twich or other content creator platform!
     </h3>
 

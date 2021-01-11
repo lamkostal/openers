@@ -218,7 +218,7 @@ export let sources = [
   },
   {
     title: "Countdown2",
-    category:["counters",],
+    category:["counters","featured"],
     descr: {
       size: "1080x1920 (0.7mb)",
       duration: "4s",
@@ -507,14 +507,14 @@ export let sources = [
       duration: "3s",
       format: "25fps mp4",
     },
-    downLink: "/mp4/Doublehelix.mp4",
+    downLink: "/mp4/Double-helix.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1609501042/animated%20backgrounds/openR-thumbs/DoubleHelix-vs_ojmpxt.mp4",
     downloadFree: true,
     seamless: false,
   },
   {
     title: "Molecular Soup",
-    category:["abstract",],
+    category:["abstract","featured"],
     descr: {
       size: "1080x1920 (2.45mb)",
       duration: "5s",
@@ -527,7 +527,7 @@ export let sources = [
   },
   {
     title: "Elastic",
-    category:["text",],
+    category:["text","featured"],
     descr: {
       size: "1080x1920 (0.65mb)",
       duration: "4s",
@@ -678,6 +678,19 @@ export let sources = [
     },
     downLink: "/mp4/pebbles.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1609865872/animated%20backgrounds/openR-thumbs/pebbles-s_qkoobu.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "Sun",
+    category:["particles"],
+    descr: {
+      size: "1080x1920 (2.2mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/particles-sun.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1610379470/animated%20backgrounds/openR-thumbs/particles-sun-s_uw6yem.mp4",
     downloadFree: true,
     seamless: true,
   },
