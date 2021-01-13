@@ -694,6 +694,20 @@ export let sources = [
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "We like cubes",
+    category:["text",],
+    descr: {
+      size: "1080x1920 (0.4mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/hey.mp4",
+    // videoPreview:"/mp4/hey-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1610538124/animated%20backgrounds/openR-thumbs/likecubes-s_q5camq.mp4",
+    downloadFree: false,
+    seamless: false,
+  },
 
 
 
