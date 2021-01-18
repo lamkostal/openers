@@ -708,6 +708,20 @@ export let sources = [
     downloadFree: false,
     seamless: false,
   },
+  {
+    title: "Overthinking",
+    category:["text","featured"],
+    descr: {
+      size: "1080x1920 (1.5mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/overthinking.mp4",
+    // videoPreview:"/mp4/hey-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1610966458/animated%20backgrounds/openR-thumbs/overthinking-vs_jmhsps.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 
 
