@@ -722,6 +722,34 @@ export let sources = [
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "BLM",
+    category:["text","featured"],
+    descr: {
+      size: "1080x1920 (3.15mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/BLM.mp4",
+    // videoPreview:"/mp4/hey-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1611511080/animated%20backgrounds/openR-thumbs/BLM-vs_lvkzg0.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
+  {
+    title: "Nice Hair",
+    category:["text","featured"],
+    descr: {
+      size: "1080x1920 (3.15mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "",
+    // videoPreview:"/mp4/hey-s.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1611511081/animated%20backgrounds/openR-thumbs/nice-hair_g-vs_veisco.mp4",
+    downloadFree: false,
+    seamless: true,
+  },
 
 
 
