@@ -745,10 +745,22 @@ export let sources = [
       format: "25fps mp4",
     },
     downLink: "",
-    // videoPreview:"/mp4/hey-s.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1611511081/animated%20backgrounds/openR-thumbs/nice-hair_g-vs_veisco.mp4",
     downloadFree: false,
     seamless: true,
+  },
+  {
+    title: "Data Flow",
+    category:["text","featured"],
+    descr: {
+      size: "",
+      duration: "",
+      format: "",
+    },
+    downLink: "",
+       videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1611760542/animated%20backgrounds/openR-thumbs/dataflow-vs_z8qwht.mp4",
+    downloadFree: false,
+    seamless: false,
   },
 
 
