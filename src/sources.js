@@ -762,6 +762,19 @@ export let sources = [
     downloadFree: false,
     seamless: false,
   },
+  {
+    title: "Stream-StartingSoon",
+    category:["stream","featured"],
+    descr: {
+      size: "1080x1920 (1.65mb)",
+      duration: "5s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamStarts-still.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1612540740/animated%20backgrounds/openR-thumbs/streamStarts-still-vs_q7pbpg.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 
 
