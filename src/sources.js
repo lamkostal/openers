@@ -775,6 +775,19 @@ export let sources = [
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "Stream-MTG",
+    category:["stream","featured"],
+    descr: {
+      size: "1080x1920 (0.5mb)",
+      duration: "3s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamStarts-still.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1612978839/animated%20backgrounds/openR-thumbs/streamStarts-MTG-vs_hcbf0q.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 
 
