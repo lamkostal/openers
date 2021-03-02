@@ -22,7 +22,7 @@
   $: filtered = filter;
   function setFilter(event) {
     filtered = event.detail.category;
-    console.log(filtered);
+   
   }
   
 
@@ -698,7 +698,7 @@
       <h3 class="ivert__color max-char">
         Ask for a custom solution that we can provide, for example add your
         brand name to an existing visualisation. We will get back to you ASAP! <br>
-        Also send us your ideas about what other type of graphics or content you would like openR to have!
+        Also we would love to hear your ideas about other type of graphics or content you would like openR to have!
       </h3>
     </div>
 

@@ -8,14 +8,14 @@
 
   function openModal() {
     dispatch("open");
-    console.log("dispatched from component");
+   
   }
   //  lazyload
 
   onMount(async () => {
     let videoEl = document.querySelectorAll(".lozad");
-    // console.log(videoEl)
-    // videoEl.forEach((e)=>e.play())
+   
+    
     const observer = lozad(videoEl, {
       rootMargin: "400px 0px",
       threshold: 0.1,
