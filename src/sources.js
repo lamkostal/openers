@@ -801,6 +801,20 @@ export let sources = [
     downloadFree: false,
     seamless: false,
   },
+  {
+    title: "Transition-circles",
+    category:["featured"],
+    descr: {
+      size: "0.25mb",
+      duration: "2s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/transition-circles.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1615309349/animated%20backgrounds/openR-thumbs/transition-circles-s_jewsm5.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+
 
 
 
