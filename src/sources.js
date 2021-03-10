@@ -514,7 +514,7 @@ export let sources = [
   },
   {
     title: "Molecular Soup",
-    category:["abstract","featured"],
+    category:["abstract"],
     descr: {
       size: "1080x1920 (2.45mb)",
       duration: "5s",
@@ -724,7 +724,7 @@ export let sources = [
   },
   {
     title: "BLM",
-    category:["text","featured"],
+    category:["text"],
     descr: {
       size: "1080x1920 (3.15mb)",
       duration: "4s",
@@ -813,6 +813,19 @@ export let sources = [
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1615309349/animated%20backgrounds/openR-thumbs/transition-circles-s_jewsm5.mp4",
     downloadFree: true,
     seamless: false,
+  },
+  {
+    title: "StreamIn5",
+    category:["stream","featured"],
+    descr: {
+      size: "1080x1920 (0.5mb)",
+      duration: "6s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamIn5.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1615397126/animated%20backgrounds/openR-thumbs/streamIn5-vs_qb5p4z.mp4",
+    downloadFree: true,
+    seamless: true,
   },
 
 
