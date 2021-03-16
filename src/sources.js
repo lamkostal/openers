@@ -827,6 +827,19 @@ export let sources = [
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "Stream-going live",
+    category:["stream","featured"],
+    descr: {
+      size: "1080x1920 (0.8mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/goinlive.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1615904254/animated%20backgrounds/openR-thumbs/goinlive-s_rg7o5t.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
 
 
 
