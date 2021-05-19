@@ -840,6 +840,19 @@ export let sources = [
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "Transition-curtain",
+    category:["featured"],
+    descr: {
+      size: "0.1mb",
+      duration: "3s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/transition_curtains.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1621418533/animated%20backgrounds/openR-thumbs/transition_curtains_s_liwxxe.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
 
 
 
