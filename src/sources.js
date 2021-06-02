@@ -803,7 +803,7 @@ export let sources = [
   },
   {
     title: "Transition-circles",
-    category:["featured"],
+    category:["featured","transitions"],
     descr: {
       size: "0.25mb",
       duration: "2s",
@@ -842,7 +842,7 @@ export let sources = [
   },
   {
     title: "Transition-curtain",
-    category:["featured"],
+    category:["featured","transitions"],
     descr: {
       size: "0.1mb",
       duration: "3s",
@@ -855,7 +855,7 @@ export let sources = [
   },
   {
     title: "Transition-grid",
-    category:["featured"],
+    category:["transitions"],
     descr: {
       size: "0.3mb",
       duration: "2s",
@@ -863,6 +863,19 @@ export let sources = [
     },
     downLink: "/mp4/transition-grid.mp4",
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1621704419/animated%20backgrounds/openR-thumbs/transition-grid-s_ty1wko.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+  {
+    title: "Transition-wave",
+    category:["featured","transitions"],
+    descr: {
+      size: "0.25mb",
+      duration: "2s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/transition_wave.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1622626322/animated%20backgrounds/openR-thumbs/transition_wave-s_me8n8a.mp4",
     downloadFree: true,
     seamless: false,
   },

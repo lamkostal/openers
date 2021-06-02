@@ -51,6 +51,12 @@ const dispatch = createEventDispatcher();
 	        on:click="{() => current = 'particles'}"
         on:click={setCat}>Particles</button>
         </li>
+        <li>
+        <button transition:fade|local value="transitions" 
+        	class:active="{current === 'transitions'}"
+	        on:click="{() => current = 'transitions'}"
+        on:click={setCat}>Transitions</button>
+        </li>
          <li>
           <button transition:fade|local value="all" 
           	class:active="{current === 'all'}"
@@ -82,7 +88,7 @@ const dispatch = createEventDispatcher();
     }
     .categories-menu_list{
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
         list-style: none;
@@ -90,11 +96,13 @@ const dispatch = createEventDispatcher();
     }
     .categories-menu_list li{
         display: flex;
-        flex:1 0 100px;
+        flex:0 1 140px;
         justify-content: center;
+       
     }
     button{
         width:95%;
+        padding:  0.5em 1em;
         cursor: pointer;
         letter-spacing: 1.5px;
         font-weight: 600;
