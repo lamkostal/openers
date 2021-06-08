@@ -879,6 +879,19 @@ export let sources = [
     downloadFree: true,
     seamless: false,
   },
+  {
+    title: "Transition-stars",
+    category:["featured","transitions"],
+    descr: {
+      size: "0.36mb",
+      duration: "2s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/transition_stars.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1623150388/animated%20backgrounds/openR-thumbs/transition_stars-s_bw9xu6.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
 
 
 
