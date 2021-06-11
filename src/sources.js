@@ -892,6 +892,20 @@ export let sources = [
     downloadFree: true,
     seamless: false,
   },
+  {
+    title: "Transition-split",
+    category:["featured","transitions"],
+    descr: {
+      size: "0.2mb",
+      duration: "2s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/trans-split.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1623394524/animated%20backgrounds/openR-thumbs/trans-split-s_dobjwz.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+
 
 
 
