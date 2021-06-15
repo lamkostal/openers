@@ -77,8 +77,13 @@ const dispatch = createEventDispatcher();
     }
     @media (max-width:740px){
         .categories-menu{
-        width:50vw;
+        width:80vw;
         }
+         .categories-menu_list{
+       
+        justify-content: center;
+     
+    }
         .categories-menu_list li{
         display: flex;
         flex:1 0 100%;
