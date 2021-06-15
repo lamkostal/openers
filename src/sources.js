@@ -905,12 +905,20 @@ export let sources = [
     downloadFree: true,
     seamless: false,
   },
-
-
-
-
-
-
+  {
+    title: "Transition-shutter",
+    category:["featured","transitions"],
+    descr: {
+      size: "0.28mb",
+      duration: "2s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/transition_shutter.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1623745831/animated%20backgrounds/openR-thumbs/transition_shutter-s_wlmnu8.mp4",
+    downloadFree: true,
+    seamless: false,
+  },
+  
 
 ];
 
