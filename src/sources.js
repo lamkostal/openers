@@ -25,7 +25,7 @@ export let sources = [
     },
     downLink: "/mp4/electrons.mp4",
     // videoPreview:"/mp4/electrons-s.mp4",
-    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722438/animated%20backgrounds/openR-thumbs/electrons-s_o94geh.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1623942234/animated%20backgrounds/openR-thumbs/streamStarts-blink-s_wbvfev.mp4",
 
     downloadFree: false,
     seamless: false,
@@ -738,7 +738,7 @@ export let sources = [
   },
   {
     title: "Nice Hair",
-    category:["text","featured"],
+    category:["text"],
     descr: {
       size: "1080x1920 (3.15mb)",
       duration: "4s",
@@ -790,7 +790,7 @@ export let sources = [
   },
   {
     title: "Threads",
-    category:["text","featured","particles"],
+    category:["text","particles"],
     descr: {
       size: "",
       duration: "5s",
@@ -829,7 +829,7 @@ export let sources = [
   },
   {
     title: "Stream-going live",
-    category:["stream","featured"],
+    category:["stream"],
     descr: {
       size: "1080x1920 (0.8mb)",
       duration: "4s",
@@ -855,7 +855,7 @@ export let sources = [
   },
   {
     title: "Transition-grid",
-    category:["transitions"],
+    category:["transitions",'featured'],
     descr: {
       size: "0.3mb",
       duration: "2s",
@@ -868,7 +868,7 @@ export let sources = [
   },
   {
     title: "Transition-wave",
-    category:["featured","transitions"],
+    category:["transitions"],
     descr: {
       size: "0.25mb",
       duration: "2s",
@@ -894,7 +894,7 @@ export let sources = [
   },
   {
     title: "Transition-split",
-    category:["featured","transitions"],
+    category:["transitions"],
     descr: {
       size: "0.2mb",
       duration: "2s",
@@ -917,6 +917,19 @@ export let sources = [
     videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1623745831/animated%20backgrounds/openR-thumbs/transition_shutter-s_wlmnu8.mp4",
     downloadFree: true,
     seamless: false,
+  },
+  {
+    title: "Stream-blinky letters",
+    category:["stream","featured"],
+    descr: {
+      size: "1080x1920 (0.3mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/streamStarts-blink.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1615904254/animated%20backgrounds/openR-thumbs/goinlive-s_rg7o5t.mp4",
+    downloadFree: true,
+    seamless: true,
   },
   
 
