@@ -927,7 +927,7 @@ export let sources = [
       format: "25fps mp4",
     },
     downLink: "/mp4/streamStarts-blink.mp4",
-    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1615904254/animated%20backgrounds/openR-thumbs/goinlive-s_rg7o5t.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1623942234/animated%20backgrounds/openR-thumbs/streamStarts-blink-s_wbvfev.mp4",
     downloadFree: true,
     seamless: true,
   },
