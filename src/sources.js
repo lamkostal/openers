@@ -24,8 +24,7 @@ export let sources = [
       format: "",
     },
     downLink: "/mp4/electrons.mp4",
-    // videoPreview:"/mp4/electrons-s.mp4",
-    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1623942234/animated%20backgrounds/openR-thumbs/streamStarts-blink-s_wbvfev.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1603722438/animated%20backgrounds/openR-thumbs/electrons-s_o94geh.mp4",
 
     downloadFree: false,
     seamless: false,

@@ -45,7 +45,7 @@
   .card {
     overflow: hidden;
     position: relative;
-    padding: 2rem 2rem 1rem;
+    padding: 2rem 1rem 1rem;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -57,6 +57,8 @@
   .card-text-block {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex:1;
   }
   .buttons_wrap {
     display: flex;
@@ -73,7 +75,7 @@
       flex-direction: column;
     }
     .card {
-      padding: 1rem 1rem 0.5rem;
+      padding: 1rem 1.1rem 0.5rem;
     }
   }
 
@@ -147,7 +149,7 @@
     } */
 
   .buttons_wrap > * {
-    margin: 15px;
+    margin: 15px 0;
   }
   a :global(.interact-icon) {
     width: 25px;
