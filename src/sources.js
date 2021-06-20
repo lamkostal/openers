@@ -932,7 +932,7 @@ export let sources = [
   },
   {
     title: "Smooth-Spheres",
-    category:["abstract","featured"],
+    category:["abstract",""],
     descr: {
       size: "1080x1920 (1mb)",
       duration: "4s",
