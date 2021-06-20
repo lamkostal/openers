@@ -930,6 +930,19 @@ export let sources = [
     downloadFree: true,
     seamless: true,
   },
+  {
+    title: "Smooth-Spheres",
+    category:["abstract","featured"],
+    descr: {
+      size: "1080x1920 (1mb)",
+      duration: "4s",
+      format: "25fps mp4",
+    },
+    downLink: "/mp4/smooth-spheres.mp4",
+    videoPreview:"https://res.cloudinary.com/lamkos/video/upload/v1624205840/animated%20backgrounds/openR-thumbs/smooth-spheres-s_rb1jqp.mp4",
+    downloadFree: true,
+    seamless: true,
+  },
   
 
 ];
