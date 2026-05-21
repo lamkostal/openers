@@ -508,7 +508,7 @@
 
 </svelte:head>
 
-<Modal on:close={close} style={styled} />
+<!-- <Modal on:close={close} style={styled} /> -->
 <main>
 
   <section class="hero" id="hero">
