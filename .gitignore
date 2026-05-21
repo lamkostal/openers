@@ -5,3 +5,10 @@
 yarn-error.log
 /cypress/screenshots/
 /__sapper__/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
